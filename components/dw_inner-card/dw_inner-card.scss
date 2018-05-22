@@ -1,0 +1,47 @@
+@import '../mixins/dw_colors';
+@import '../mixins/dw_spacing';
+@import '../mixins/dw_borders';
+@import '../mixins/dw_font_style';
+
+
+.dw-inner-card {
+
+    // Card header
+    .dw-card-header {
+        padding: $dw-gap $dw-gap 0 $dw-gap!important;
+        box-shadow: none;
+        border-bottom: 1px solid #eeeeee;
+
+        .dw-btn {
+            margin-bottom: $dw-gap!important;
+        }
+
+        h2 {
+            font-size: $font-size--md;
+            text-transform: capitalize;
+            line-height: $line-height40;
+
+            color: #4D4D4E;
+            font-weight: 500;
+        }
+    }
+
+    // Card body
+    .dw-card-body {
+        padding: $dw-padding;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    // Card footer
+    .dw-card-footer {
+        padding: $dw-gap $dw-gap 0 $dw-gap!important;
+        border-top: solid 1px #eee;
+        text-align: right;
+        .dw-btn {
+            margin-bottom: $dw-gap!important;
+        }
+    }
+}

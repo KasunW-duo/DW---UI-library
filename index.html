@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dwUilib"> <!--intiatig the angular app-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/" />
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="build/shell/shell.css">
+    <link rel="stylesheet" href="build/uilib/dw_ftadmin_uilib.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="build/shell/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+<!--<div class="dw-card medium" >-->
+<!--<div class="dw-toolbar dw-card-header">-->
+<!--<h2>Card header</h2>-->
+<!--<div class="dw-tools">-->
+<!--<button class="dw-btn dw-tool dw-success">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool dw-error">-->
+<!--<span>-->
+<!--<i class="material-icons">edit</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool">-->
+<!--<span>-->
+<!--<i class="material-icons">menu</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="dw-card-body">-->
+<!--<p>This is the body</p>-->
+<!--</div>-->
+<!--<div class="dw-card-footer">-->
+<!--<button class="dw-btn dw-default">-->
+<!--<span>Default</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-success">-->
+<!--<span>Success</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-error">-->
+<!--<span>Danger</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-default dw-iconed">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--<span>Iconed</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="dw-card medium">-->
+<!--<div class="dw-toolbar dw-card-header">-->
+<!--<h2>Card header</h2>-->
+<!--<div class="dw-tools">-->
+<!--<button class="dw-btn dw-tool dw-success">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool dw-error">-->
+<!--<span>-->
+<!--<i class="material-icons">edit</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool">-->
+<!--<span>-->
+<!--<i class="material-icons">menu</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="dw-card-body">-->
+<!--<div class="dw-card dw-inner-card medium">-->
+<!--<div class="dw-toolbar dw-card-header">-->
+<!--<h2>Card header</h2>-->
+<!--<div class="dw-tools">-->
+<!--<button class="dw-btn dw-tool dw-success">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool dw-error">-->
+<!--<span>-->
+<!--<i class="material-icons">edit</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool">-->
+<!--<span>-->
+<!--<i class="material-icons">menu</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="dw-card-body">-->
+<!--<p>This is the body</p>-->
+<!--</div>-->
+<!--<div class="dw-card-footer">-->
+<!--<button class="dw-btn dw-default">-->
+<!--<span>Default</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-success">-->
+<!--<span>Success</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-error">-->
+<!--<span>Danger</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-default dw-iconed">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--<span>Iconed</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="dw-card dw-inner-card medium">-->
+<!--<div class="dw-toolbar dw-card-header">-->
+<!--<h2>Card header</h2>-->
+<!--<div class="dw-tools">-->
+<!--<button class="dw-btn dw-tool dw-success">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool dw-error">-->
+<!--<span>-->
+<!--<i class="material-icons">edit</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool">-->
+<!--<span>-->
+<!--<i class="material-icons">menu</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="dw-card-body">-->
+<!--<div class="dw-call-info medium" ng-controller="CardController">-->
+<!--<h2 class="dw-text700 dw-font24 dw-call-info-time">00:00:00</h2>-->
+<!--<div class="dw-info-label">on call time</div>-->
+<!--<div class="dw-status dw-inbound">inbond</div>-->
+<!--</div>-->
+
+<!--<div class="dw-call-info medium" ng-controller="CardController">-->
+<!--<h2 class="dw-text700 dw-font24 dw-call-info-time">00:00:00</h2>-->
+<!--<div class="dw-info-label">on call time</div>-->
+<!--<div class="dw-status dw-outbound">outbound</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="dw-card-footer">-->
+<!--<button class="dw-btn dw-default">-->
+<!--<span>Default</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-success">-->
+<!--<span>Success</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-error">-->
+<!--<span>Danger</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-default dw-iconed">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--<span>Iconed</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="dw-card" ng-controller="CardController">-->
+<!--<div class="dw-toolbar dw-card-header">-->
+<!--<h2>Card header</h2>-->
+<!--<div class="dw-tools">-->
+<!--<button class="dw-btn dw-tool dw-success">-->
+<!--<span>-->
+<!--<i class="material-icons">{{ firstIcon }}</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool dw-error">-->
+<!--<span>-->
+<!--<i class="material-icons">edit</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-tool">-->
+<!--<span>-->
+<!--<i class="material-icons">menu</i>-->
+<!--</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="dw-card-body">-->
+<!--<input type="text" ng-model="inputText">-->
+<!--</div>-->
+<!--<div class="dw-card-footer">-->
+<!--<button class="dw-btn dw-default">-->
+<!--<span>Default</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-success">-->
+<!--<span>Success</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-error">-->
+<!--<span>Danger</span>-->
+<!--</button>-->
+<!--<button class="dw-btn dw-default dw-iconed">-->
+<!--<span>-->
+<!--<i class="material-icons">face</i>-->
+<!--</span>-->
+<!--<span>Iconed</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+
+<div ng-controller="TopNavController">
+    <div class="slide-animate" ng-include="template.url"></div>
+</div>
+
+<!--<div ng-controller="TopNavController"></div>-->
+<div ng-controller="NavigationController">
+    <div class="row margin0">
+        <!---->
+        <div class="col-md-3 dw-navigation" id="sidenav">
+            <ul>
+                <!--<li>
+                    <a ui-sref="Toolbar">Toolbar</a>
+                </li>
+                <li>
+                    <a ui-sref="Generic Card">Card</a>
+                </li>-->
+
+                <li class="dw-navigation-title dw-text700">General testing</li>
+                <li ng-repeat="b in data">
+                    <a ui-sref="{{ b.name }}">
+                        <i class="material-icons">
+                            favorite
+                        </i>
+                        {{ b.name }}
+                    </a>
+                </li>
+                <li class="dw-multilevel-nav">
+                    <a data-toggle="collapse" href="#collapse1">
+                        <i class="material-icons">
+                            favorite
+                        </i>
+                        Collapsible list group
+
+                        <i class="material-icons pull-right chevron">
+                            arrow_drop_down
+                        </i>
+                    </a>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <ul>
+                            <li>
+                                <a data-toggle="collapse" href="#collapse2">
+                                    Collapsible list group
+
+                                    <i class="material-icons pull-right chevron">
+                                        arrow_drop_down
+                                    </i>
+                                </a>
+                                <div id="collapse2" class="panel-collapse collapse dw-multilevel-second">
+                                    <ul>
+                                        <li><a href="">One Link</a></li>
+                                        <li><a href="">One Link</a></li>
+                                        <li><a href="">One Link</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">One Link</a></li>
+                            <li><a href="">One Link</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-offset-3 col-md-9">
+            <div class="dw-navigation-view">
+                <h1>{{state.current.params.comps.name}}</h1>
+                <p>{{state.current.params.comps.description}}</p>
+               <i>Last updated : {{state.current.params.comps.last_updated_date}}</i>
+
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="build/app.js"></script>
+
+<script src="components/dw_card/dw_card_controller.js" type="text/javascript"></script>
+<script src="components/dw_top_nav/dw_top_nav_controller.js" type="text/javascript"></script>
+<script src="components/dw_navigation/dw_navigation_controller.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

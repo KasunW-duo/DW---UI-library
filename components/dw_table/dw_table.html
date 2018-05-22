@@ -1,0 +1,415 @@
+<div class="dw-table" ng-controller="CardController">
+    <table class="table table-responsive ng-scope">
+        <thead>
+        <tr>
+            <th>
+                <div class="t-list-h">
+                    #ID
+                </div>
+            </th>
+            <th>
+
+                <div class="t-list-h">
+                    assignee
+                </div>
+            </th>
+            <th>
+                <div class="t-list-h">
+                    subject
+                </div>
+            </th>
+            <th>
+                <div class="t-list-h">TYPE</div>
+            </th>
+            <th>
+                <div class="t-list-h">PRIORITY</div>
+            </th>
+            <th>
+                <div class="t-list-h">STATUS</div>
+            </th>
+            <th>
+                <div class="t-list-h">UPDATED</div>
+            </th>
+            <th>
+                <div class="t-list-h">CHANNEL</div>
+            </th>
+            <!--<th>-->
+
+            <!--</th>-->
+        </tr>
+        </thead>
+        <tbody id="ticketMainWrp" class="t-i-tbody">
+        <!-- ngRepeat: ticket in ticketList track by $index --><tr id="5a5861c5d1e58a0001e305a4" ng-click="gotoTicket(ticket)" class="t-list-view-body ng-scope" ng-repeat="ticket in ticketList track by $index" style="">
+            <td>
+                <div class="t-i-desc ng-binding">
+                    6682
+                </div>
+            </td>
+            <td> <!-- assignee by -->
+                <div class="t-list-h">
+                    <ul class="customer-style-ul inline-assignee">
+                        <li>
+                            <div class="t-assignee-avatar">
+                                <img src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" ng-src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" width="30">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="t-assignee-name ng-binding">
+                                Duoo OOwner
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc ng-binding">
+                    test ticket 2
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-desc ng-binding">
+                    incident
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-priority">
+                    <div class="priority-view  ng-binding low" ng-class="ticket.priority">
+                        low
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-status">
+                    <div class="t-status-view ng-binding" style="text-align: left!important;;">
+                        new
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc">
+                    <time-ago from-time="2018-03-27T13:24:10.056Z" class="ng-isolate-scope">28 days ago</time-ago>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-type-wrp">
+                    <div class="t-type-wrapper" title="Api">
+                        <i ng-class="{'fa fa-random':ticket.channel=='api',
+                  'fa fa-twitter':ticket.channel=='twitter',
+                   'fa fa-facebook':ticket.channel=='facebook-post',
+                  'fa fa-phone':ticket.channel=='call',
+                  'fa fa-microphone':ticket.channel=='voicemail',
+                  'fa fa-bell-o':ticket.channel=='sms',
+                  'fa fa-bookmark-o':ticket.channel=='new',
+                  'fa fa-envelope-o':ticket.channel=='email'}" class="fa fa-random"></i>
+                    </div>
+                </div>
+            </td>
+            <!--<td>-->
+            <!--<div class="t-i-more-wrp">-->
+            <!--<div class="ticket-more">-->
+            <!--<i class="ti-more-alt animated fadeInRight"></i>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</td>-->
+        </tr><!-- end ngRepeat: ticket in ticketList track by $index --><tr id="59007b1081cbe100016d5228" ng-click="gotoTicket(ticket)" class="t-list-view-body ng-scope" ng-repeat="ticket in ticketList track by $index">
+            <td>
+                <div class="t-i-desc ng-binding">
+                    40389
+                </div>
+            </td>
+            <td> <!-- assignee by -->
+                <div class="t-list-h">
+                    <ul class="customer-style-ul inline-assignee">
+                        <li>
+                            <div class="t-assignee-avatar">
+                                <img src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" ng-src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" width="30">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="t-assignee-name ng-binding">
+                                Duoo OOwner
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc ng-binding">
+                    default subject1
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-desc ng-binding">
+                    complain
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-priority">
+                    <div class="priority-view  ng-binding urgent" ng-class="ticket.priority">
+                        urgent
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-status">
+                    <div class="t-status-view ng-binding" style="text-align: left!important;;">
+                        new
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc">
+                    <time-ago from-time="2017-09-12T08:02:39.479Z" class="ng-isolate-scope">7 months ago</time-ago>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-type-wrp">
+                    <div class="t-type-wrapper" title="Call">
+                        <i ng-class="{'fa fa-random':ticket.channel=='api',
+                  'fa fa-twitter':ticket.channel=='twitter',
+                   'fa fa-facebook':ticket.channel=='facebook-post',
+                  'fa fa-phone':ticket.channel=='call',
+                  'fa fa-microphone':ticket.channel=='voicemail',
+                  'fa fa-bell-o':ticket.channel=='sms',
+                  'fa fa-bookmark-o':ticket.channel=='new',
+                  'fa fa-envelope-o':ticket.channel=='email'}" class="fa fa-phone"></i>
+                    </div>
+                </div>
+            </td>
+            <!--<td>-->
+            <!--<div class="t-i-more-wrp">-->
+            <!--<div class="ticket-more">-->
+            <!--<i class="ti-more-alt animated fadeInRight"></i>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</td>-->
+        </tr><!-- end ngRepeat: ticket in ticketList track by $index --><tr id="58ca366cba6f4420cc877da0" ng-click="gotoTicket(ticket)" class="t-list-view-body ng-scope" ng-repeat="ticket in ticketList track by $index">
+            <td>
+                <div class="t-i-desc ng-binding">
+                    40142
+                </div>
+            </td>
+            <td> <!-- assignee by -->
+                <div class="t-list-h">
+                    <ul class="customer-style-ul inline-assignee">
+                        <li>
+                            <div class="t-assignee-avatar">
+                                <img src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" ng-src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" width="30">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="t-assignee-name ng-binding">
+                                Duoo OOwner
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc ng-binding">
+                    sssss
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-desc ng-binding">
+                    Inquery
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-priority">
+                    <div class="priority-view  ng-binding urgent" ng-class="ticket.priority">
+                        urgent
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-status">
+                    <div class="t-status-view ng-binding" style="text-align: left!important;;">
+                        new
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc">
+                    <time-ago from-time="2017-04-27T09:17:08.736Z" class="ng-isolate-scope">12 months ago</time-ago>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-type-wrp">
+                    <div class="t-type-wrapper" title="Api">
+                        <i ng-class="{'fa fa-random':ticket.channel=='api',
+                  'fa fa-twitter':ticket.channel=='twitter',
+                   'fa fa-facebook':ticket.channel=='facebook-post',
+                  'fa fa-phone':ticket.channel=='call',
+                  'fa fa-microphone':ticket.channel=='voicemail',
+                  'fa fa-bell-o':ticket.channel=='sms',
+                  'fa fa-bookmark-o':ticket.channel=='new',
+                  'fa fa-envelope-o':ticket.channel=='email'}" class="fa fa-random"></i>
+                    </div>
+                </div>
+            </td>
+            <!--<td>-->
+            <!--<div class="t-i-more-wrp">-->
+            <!--<div class="ticket-more">-->
+            <!--<i class="ti-more-alt animated fadeInRight"></i>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</td>-->
+        </tr><!-- end ngRepeat: ticket in ticketList track by $index --><tr id="587eff6c00d7170001323e32" ng-click="gotoTicket(ticket)" class="t-list-view-body ng-scope" ng-repeat="ticket in ticketList track by $index">
+            <td>
+                <div class="t-i-desc ng-binding">
+                    1004
+                </div>
+            </td>
+            <td> <!-- assignee by -->
+                <div class="t-list-h">
+                    <ul class="customer-style-ul inline-assignee">
+                        <li>
+                            <div class="t-assignee-avatar">
+                                <img src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" ng-src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" width="30">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="t-assignee-name ng-binding">
+                                Duoo OOwner
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc ng-binding">
+                    com__
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-desc ng-binding">
+                    complain
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-priority">
+                    <div class="priority-view  ng-binding normal" ng-class="ticket.priority">
+                        normal
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-status">
+                    <div class="t-status-view ng-binding" style="text-align: left!important;;">
+                        new
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc">
+                    <time-ago from-time="2017-01-18T05:38:54.416Z" class="ng-isolate-scope">about a year ago</time-ago>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-type-wrp">
+                    <div class="t-type-wrapper" title="Api">
+                        <i ng-class="{'fa fa-random':ticket.channel=='api',
+                  'fa fa-twitter':ticket.channel=='twitter',
+                   'fa fa-facebook':ticket.channel=='facebook-post',
+                  'fa fa-phone':ticket.channel=='call',
+                  'fa fa-microphone':ticket.channel=='voicemail',
+                  'fa fa-bell-o':ticket.channel=='sms',
+                  'fa fa-bookmark-o':ticket.channel=='new',
+                  'fa fa-envelope-o':ticket.channel=='email'}" class="fa fa-random"></i>
+                    </div>
+                </div>
+            </td>
+            <!--<td>-->
+            <!--<div class="t-i-more-wrp">-->
+            <!--<div class="ticket-more">-->
+            <!--<i class="ti-more-alt animated fadeInRight"></i>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</td>-->
+        </tr><!-- end ngRepeat: ticket in ticketList track by $index --><tr id="585149f4c97fd80001826b2a" ng-click="gotoTicket(ticket)" class="t-list-view-body ng-scope" ng-repeat="ticket in ticketList track by $index">
+            <td>
+                <div class="t-i-desc ng-binding">
+                    165
+                </div>
+            </td>
+            <td> <!-- assignee by -->
+                <div class="t-list-h">
+                    <ul class="customer-style-ul inline-assignee">
+                        <li>
+                            <div class="t-assignee-avatar">
+                                <img src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" ng-src="http://fileservice.app1.veery.cloud/DVP/API/1.0.0.0/InternalFileService/File/Download/1/103/475a2be7-23c8-4619-bb03-f4b1a71c3faa/ProPic" width="30">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="t-assignee-name ng-binding">
+                                Duoo OOwner
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc ng-binding">
+                    1111
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-desc ng-binding">
+                    Important!
+                </div>
+            </td>
+
+            <td>
+                <div class="t-i-priority">
+                    <div class="priority-view  ng-binding normal" ng-class="ticket.priority">
+                        normal
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-status">
+                    <div class="t-status-view ng-binding" style="text-align: left!important;;">
+                        Urgent_t...
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-desc">
+                    <time-ago from-time="2016-12-14T13:33:00.538Z" class="ng-isolate-scope">about a year ago</time-ago>
+                </div>
+            </td>
+            <td>
+                <div class="t-i-type-wrp">
+                    <div class="t-type-wrapper" title="Api">
+                        <i ng-class="{'fa fa-random':ticket.channel=='api',
+                  'fa fa-twitter':ticket.channel=='twitter',
+                   'fa fa-facebook':ticket.channel=='facebook-post',
+                  'fa fa-phone':ticket.channel=='call',
+                  'fa fa-microphone':ticket.channel=='voicemail',
+                  'fa fa-bell-o':ticket.channel=='sms',
+                  'fa fa-bookmark-o':ticket.channel=='new',
+                  'fa fa-envelope-o':ticket.channel=='email'}" class="fa fa-random"></i>
+                    </div>
+                </div>
+            </td>
+            <!--<td>-->
+            <!--<div class="t-i-more-wrp">-->
+            <!--<div class="ticket-more">-->
+            <!--<i class="ti-more-alt animated fadeInRight"></i>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</td>-->
+        </tr><!-- end ngRepeat: ticket in ticketList track by $index -->
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,7 @@
+# Third party sources #
+######################
+node_modules/
+
+# IDE related sources #
+######################
+.idea/

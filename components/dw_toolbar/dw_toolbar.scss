@@ -1,0 +1,27 @@
+
+
+.dw-toolbar {
+    padding: $dw-padding;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-areas:
+    'title title title tools tools tools';
+    h2 {
+        margin: 0;
+        display: inline-block;
+        grid-area: title;
+        font-weight: normal;
+    }
+    .dw-tools{
+        display: inline-block;
+        grid-area: tools;
+        text-align: right;
+        &>ul{
+            list-style: none;
+            margin: 0;
+            &>li{
+                display: inline-block;
+            }
+        }
+    }
+}

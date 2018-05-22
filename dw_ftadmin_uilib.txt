@@ -1,0 +1,11 @@
+DuoWorld Inc.
+Facetone Admin Console
+UI library.
+=====================================
+Owner		  : Kasun Wijeratne
+Created by	  : Kasun Wijeratne
+Created date	  : 05-04-2018
+Last updated by	  : Kasun Wijeratne
+Last updated date : 05-04-2018
+Version           : 1.0.0.0
+=====================================

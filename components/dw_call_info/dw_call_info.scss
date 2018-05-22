@@ -1,0 +1,64 @@
+.dw-call-info {
+    background-color: $dw-background;
+    padding: $dw-padding;
+    border-radius: $dw-border-radius;
+    text-transform: uppercase;
+    margin-bottom: $dw-gap;
+
+    .dw-call-info-time {
+        font-size: 24px;
+        color: #4D4D4E;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .dw-call-info-label {
+        font-size: $font-size--md;
+        letter-spacing: 1.62px;
+    }
+
+    .dw-call-info-status{
+        font-size: $font-size--sm;
+    }
+
+    .dw-inbound {
+        color: $dw-inbound;
+    }
+
+    .dw-outbound {
+        color: $dw-outbound;
+    }
+
+    .dw-reserved {
+        color: $dw-reserved;
+    }
+
+    .dw-suspended {
+        color: $dw-suspended;
+    }
+
+    .dw-other {
+        color: $dw-other;
+    }
+
+    .dw-available {
+        color: $dw-available;
+    }
+
+    .dw-busy {
+        color: $dw-busy;
+    }
+
+    .dw-afterwork {
+        color: $dw-afterwork;
+    }
+
+    .dw-break {
+        color: $dw-break;
+    }
+
+    .dw-idle {
+        color: $dw_idle;
+    }
+
+}

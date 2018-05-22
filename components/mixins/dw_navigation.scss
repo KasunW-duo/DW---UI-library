@@ -1,0 +1,138 @@
+.dw-navigation {
+  background-color: $dw-brand-dark;
+  height: 100%;
+  padding:0;
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+
+
+      a {
+        display: block;
+        border-bottom: 1px solid #333;
+        padding: 6px 25px;
+        color: $dw-light-text;
+        position: relative;
+
+        i {
+          font-size: 18px;
+          float: left;
+          margin: 3px 8px 0 0;
+        }
+
+        &:hover {
+          background: $dw-brand-light;
+          text-decoration: none;
+          color: #ffffff;
+
+          &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            left: 0;
+            background-color: $dw-brand-primary;
+            top:0;
+          }
+
+          i {
+            color: $dw-brand-primary;
+          }
+        }
+
+        .chevron {
+          position: absolute;
+          right: 0;
+          top: 2px;
+          font-size: 28px;
+        }
+      }
+
+      .panel-collapse {
+        ul {
+          li {
+            a {
+              padding: 6px 0 6px 50px;
+              background: $dw-brand-light;
+              font-size: 12px;
+
+              &:before {
+                content: '';
+                background: $dw-light-text;
+                height: 20px;
+                width: 1px;
+                position: absolute;
+                left: 33px;
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .dw-multilevel-nav {
+      a {
+
+        &:before {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 2px;
+          left: 0;
+          background-color: $dw-brand-primary;
+          top:0;
+        }
+
+        i {
+          color: $dw-brand-primary;
+        }
+      }
+
+      .collapsed {
+        border: none;
+
+        &:before {
+          display: none;
+        }
+
+        i {
+          color: $dw-light-text;
+        }
+      }
+    }
+  }
+}
+
+.dw-navigation-title {
+  text-transform: uppercase;
+  color: $dw-light-text;
+  font-size: 16px;
+  padding: 25px;
+}
+
+.dw-navigation-view {
+  margin: 25px 15px;
+  background-color: #FFFFff;
+  border-radius: 8px;
+  padding: $dw-padding;
+}
+
+.dw-multilevel-second {
+  ul {
+    padding-left: 15px;
+    li {
+      a {
+        background: transparent !important;
+        border-bottom: none;
+
+        &:before {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

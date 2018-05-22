@@ -1,0 +1,47 @@
+.dw-card {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
+    -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
+    box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
+    border-radius: $dw-border-radius;
+    overflow: hidden;
+    margin: 15px 0;
+
+    // Card header
+    .dw-card-header {
+        padding: $dw-gap $dw-gap 0 $dw-gap!important;
+        -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+
+        .dw-btn {
+            margin-bottom: $dw-gap!important;
+        }
+
+        h2 {
+            font-size: $font-size--md;
+            color: $dw-main-text;
+            text-transform: none;
+            line-height: $line-height40;
+        }
+    }
+
+    // Card body
+    .dw-card-body {
+        padding: $dw-padding;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    // Card footer
+    .dw-card-footer {
+        padding: $dw-gap $dw-gap 0 $dw-gap!important;
+        border-top: solid 1px #eee;
+        text-align: right;
+        .dw-btn {
+            margin-bottom: $dw-gap-sm !important;
+        }
+    }
+}
