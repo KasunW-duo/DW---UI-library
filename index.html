@@ -290,9 +290,12 @@
         </div>
         <div class="col-md-offset-3 col-md-9">
             <div class="dw-navigation-view">
-                <h1>{{state.current.params.comps.name}}</h1>
-                <p>{{state.current.params.comps.description}}</p>
-               <i>Last updated : {{state.current.params.comps.last_updated_date}}</i>
+                <div class="dw-card dw-header">
+                    <h1>{{state.current.params.comps.name}}</h1>
+                    <p class="dw-subtitle">{{state.current.params.comps.description}}</p>
+                    <i>Last updated : {{state.current.params.comps.last_updated_date}}</i>
+                </div>
+
 
                 <div ui-view></div>
             </div>

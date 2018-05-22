@@ -25,15 +25,24 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 21px;
 }
 
 h3 {
+  font-size: 16px;
+}
+
+p {
   font-size: 14px;
+}
+
+body {
+  font-size: 14px;
+  color: #333333;
 }
 
 .dw-navigation {
@@ -158,10 +167,6 @@ h3 {
 
 .dw-multilevel-second ul li a:before {
   display: none !important;
-}
-
-.margin0 {
-  margin: 0;
 }
 
 .dw-btn {
@@ -356,43 +361,6 @@ h3 {
   color: #243B54;
 }
 
-.margin0 {
-  margin: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-.dw-text700 {
-  font-weight: 700;
-}
-
-.dw-font24 {
-  font-size: 24px;
-}
-
-.dw-info-label {
-  font-size: 14px;
-  letter-spacing: 1.62px;
-}
-
-.dw-status {
-  font-size: 12px;
-}
-
-h1 {
-  font-size: 24px;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-h3 {
-  font-size: 14px;
-}
-
 .dw-inner-card .dw-card-header {
   padding: 15px 15px 0 15px !important;
   box-shadow: none;
@@ -456,10 +424,6 @@ h3 {
 
 .dw-toolbar .dw-tools > ul > li {
   display: inline-block;
-}
-
-.margin0 {
-  margin: 0;
 }
 
 .dw-btn {
@@ -542,4 +506,94 @@ h3 {
 .dw-btn.dw-iconed {
   padding-left: 30px;
   padding-right: 10px;
+}
+
+.dw-card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.dw-card .dw-card-header {
+  padding: 15px 15px 0 15px !important;
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dw-card .dw-card-header .dw-btn {
+  margin-bottom: 15px !important;
+}
+
+.dw-card .dw-card-header h2 {
+  font-size: 18px;
+  color: #4D4D4E;
+  text-transform: none;
+  line-height: 40px;
+}
+
+.dw-card .dw-card-body {
+  padding: 15px;
+}
+
+.dw-card .dw-card-body p {
+  margin: 0;
+}
+
+.dw-card .dw-card-footer {
+  padding: 15px 15px 0 15px !important;
+  border-top: solid 1px #eee;
+  text-align: right;
+}
+
+.dw-card .dw-card-footer .dw-btn {
+  margin-bottom: 10px !important;
+}
+
+.dw-header {
+  padding: 15px 15px 15px 30px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.dw-header h1 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.dw-header h1:before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 4px;
+  height: calc(100% - 30px);
+  background: #68318E;
+}
+
+.dw-header h1 span {
+  color: #68318E;
+}
+
+.dw-header p,
+.dw-header i {
+  margin: 0;
+  color: #808080;
+}
+
+.dw-subtitle {
+  margin: 0;
+  color: #808080;
+}
+
+.dw-information h3 {
+  margin: 0;
+}
+
+label {
+  font-weight: 600;
 }

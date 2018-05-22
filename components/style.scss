@@ -4,6 +4,7 @@
 @import 'mixins/dw_spacing';
 @import 'mixins/dw_font_style';
 @import 'mixins/dw_borders';
+@import 'mixins/dw_default';
 
 @import 'mixins/dw_navigation';
 
@@ -13,3 +14,5 @@
 @import 'dw_inner-card/dw_inner-card';
 @import 'dw_toolbar/dw_toolbar';
 @import 'dw_top_nav/dw_top_nav';
+@import 'dw_table/dw_table';
+@import 'dw_text/dw_text';

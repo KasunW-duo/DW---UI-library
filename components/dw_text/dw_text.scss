@@ -1,14 +1,44 @@
-.header {
-    padding: $dw-padding;
+.dw-header {
+    padding: $dw-padding $dw-padding $dw-padding 30px;
+    position: relative;
+    margin-bottom: $dw-gap;
 
     h1 {
+        font-weight: 600;
+        margin: 0;
+
         &:before {
             content:'';
             position:absolute;
-            left: 0;
-            top: 0;
-            width: 2px;
-            height: 100%;
+            left: 15px;
+            top: 15px;
+            width: 4px;
+            height: calc(100% - 30px);
+            background: $dw-brand-secondary;
+        }
+
+        span {
+            color: $dw-brand-secondary;
         }
     }
+
+    p,i {
+        margin: 0;
+        color: #808080;
+    }
+}
+
+.dw-subtitle {
+    margin: 0;
+    color: #808080;
+}
+
+.dw-information {
+    h3 {
+        margin: 0;
+    }
+}
+
+label {
+  font-weight:600;
 }
