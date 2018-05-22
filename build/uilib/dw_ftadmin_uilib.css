@@ -40,9 +40,13 @@ p {
   font-size: 14px;
 }
 
+.dw-text-uppercase {
+  text-transform: uppercase;
+}
+
 body {
   font-size: 14px;
-  color: #333333;
+  color: #2C3E50;
 }
 
 .dw-navigation {
@@ -273,9 +277,6 @@ body {
 }
 
 .dw-card .dw-card-header h2 {
-  font-size: 18px;
-  color: #4D4D4E;
-  text-transform: none;
   line-height: 40px;
 }
 
@@ -371,14 +372,6 @@ body {
   margin-bottom: 15px !important;
 }
 
-.dw-inner-card .dw-card-header h2 {
-  font-size: 18px;
-  text-transform: capitalize;
-  line-height: 40px;
-  color: #4D4D4E;
-  font-weight: 500;
-}
-
 .dw-inner-card .dw-card-body {
   padding: 15px;
 }
@@ -399,7 +392,6 @@ body {
 
 .dw-toolbar {
   padding: 15px;
-  text-transform: uppercase;
   display: grid;
   grid-template-areas: 'title title title tools tools tools';
 }
@@ -554,6 +546,20 @@ body {
   margin-bottom: 10px !important;
 }
 
+.dw-text-list {
+  padding: 0;
+}
+
+.dw-text-list li {
+  list-style: none;
+  padding: 15px;
+}
+
+.dw-text-list li:nth-last-of-type(even) {
+  background-color: #F2F4F8;
+  border-radius: 8px;
+}
+
 .dw-header {
   padding: 15px 15px 15px 30px;
   position: relative;
@@ -596,4 +602,12 @@ body {
 
 label {
   font-weight: 600;
+}
+
+.dw-bold-information h2 {
+  margin: 0;
+}
+
+.dw-bold-information .dw-subtitle {
+  color: #2C3E50;
 }

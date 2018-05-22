@@ -1,3 +1,17 @@
+.dw-text-list {
+    padding:0;
+
+    li {
+        list-style: none;
+        padding: $dw-padding;
+
+        &:nth-last-of-type(even) {
+            background-color: $dw-background-light;
+            border-radius: 8px;
+        }
+    }
+}
+
 .dw-header {
     padding: $dw-padding $dw-padding $dw-padding 30px;
     position: relative;
@@ -41,4 +55,14 @@
 
 label {
   font-weight:600;
+}
+
+.dw-bold-information {
+    h2 {
+        margin: 0;
+    }
+
+    .dw-subtitle {
+        color: $dw-default-text;
+    }
 }
