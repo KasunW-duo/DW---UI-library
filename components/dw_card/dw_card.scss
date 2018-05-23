@@ -9,7 +9,7 @@
 
     // Card header
     .dw-card-header {
-        padding: $dw-gap $dw-gap 0 $dw-gap!important;
+        padding: $dw-gap 25px!important;
         -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
         -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
@@ -18,8 +18,8 @@
             margin-bottom: $dw-gap!important;
         }
 
-        h2 {
-            line-height: $line-height40;
+        .dw-subtitle {
+            display: inline-table;
         }
     }
 

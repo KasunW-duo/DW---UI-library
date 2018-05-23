@@ -4,11 +4,6 @@
     li {
         list-style: none;
         padding: $dw-padding;
-
-        &:nth-last-of-type(even) {
-            background-color: $dw-background-light;
-            border-radius: 8px;
-        }
     }
 }
 
@@ -65,4 +60,8 @@ label {
     .dw-subtitle {
         color: $dw-default-text;
     }
+}
+
+small {
+    color: $dw-light-text;
 }

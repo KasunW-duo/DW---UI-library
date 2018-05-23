@@ -43,10 +43,10 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                     params: { comps : components['dw_table'] }
                 })
 
-                .state('Text', {
-                    url: "/text",
-                    templateUrl: "components/dw_text/dw_text.html",
-                    params: { comps : components['dw_text'] }
+                .state('Typography', {
+                    url: "/typography",
+                    templateUrl: "components/dw_typography/dw_typography.html",
+                    params: { comps : components['dw_typography'] }
                 });
 
         },
