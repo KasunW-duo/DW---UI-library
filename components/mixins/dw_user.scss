@@ -1,0 +1,24 @@
+.dw-profile-xs {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.dw-profile {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.dw-profile-text {
+  display: table-cell !important;
+  vertical-align: middle;
+
+  &:before {
+    display: none;
+  }
+}

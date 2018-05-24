@@ -49,6 +49,48 @@ body {
   color: #2C3E50;
 }
 
+.dw-shadow {
+  -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+}
+
+.dw-badge {
+  background-color: #68318E;
+  padding: 3px;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #FFFFff;
+  position: absolute;
+  top: 0;
+}
+
+.dw-profile-xs {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.dw-profile-xs img {
+  width: 100%;
+}
+
+.dw-profile {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.dw-profile-text {
+  display: table-cell !important;
+  vertical-align: middle;
+}
+
+.dw-profile-text:before {
+  display: none;
+}
+
 .dw-navigation {
   background-color: #131D2F;
   height: 100%;
@@ -390,86 +432,63 @@ body {
   display: inline-block;
 }
 
-.dw-btn {
-  position: relative;
-  display: inline-block;
-  background-color: #EE437E;
-  border: none;
-  padding: 10px 20px;
-  margin-left: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  height: auto;
-  font-family: 'AvenirNextLTPro-Demi', sans-serif;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 10px;
-  -webkit-transition: border-color 0.2s, background-color 0.2s;
-  transition: border-color 0.2s, background-color 0.2s;
+.dw-navbar-logo img {
+  height: 30px;
 }
 
-.dw-btn:hover {
-  color: #EE437E;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  border-color: transparent !important;
-  background-color: #fff !important;
-  -webkit-transition: border-color 0.2s, background-color 0.2s;
-  transition: border-color 0.2s, background-color 0.2s;
+.dw-top-navbar {
+  background-color: #FFFFff;
+  padding: 15px;
 }
 
-.dw-btn > span > i.material-icons {
-  font-size: 20px;
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 0;
-  bottom: 0;
-  left: 5px;
-  margin: auto;
+.dw-top-navbar-menu li {
+  float: none;
 }
 
-.dw-btn.dw-tool {
-  padding: 5px;
-  margin: 0 0 0 10px;
-  text-align: center;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border-width: 1px;
-  border-color: #fff !important;
+.dw-top-navbar-menu li a {
+  padding: 10px 15px;
+  color: #BDC2C6;
+  display: block;
 }
 
-.dw-btn.dw-tool > span > i.material-icons {
-  height: 25px;
-  width: 25px;
-  left: 4px;
-  line-height: 26px;
+.dw-top-navbar-menu li + li a {
+  border-bottom: 1px solid #BDC2C6;
 }
 
-.dw-btn.dw-default {
-  border-color: #888;
-}
+@media only screen and (min-width: 768px) {
+  .dw-top-navbar-menu {
+    float: right;
+  }
 
-.dw-btn.dw-default:hover {
-  color: #EE437E;
-}
+  .dw-top-navbar .dw-top-navbar-menu {
+    display: block;
+  }
 
-.dw-btn.dw-success {
-  border-color: #00b100;
-  color: #00b100;
-  background-color: #caffca;
-}
+  .dw-top-navbar .dw-top-navbar-menu ul {
+    display: block;
+  }
 
-.dw-btn.dw-error {
-  border-color: #e43500;
-  color: #e43500;
-  background-color: #FFDEEB;
-}
+  .dw-top-navbar .dw-top-navbar-menu ul li {
+    float: left;
+  }
 
-.dw-btn.dw-iconed {
-  padding-left: 30px;
-  padding-right: 10px;
+  .dw-top-navbar .dw-top-navbar-menu ul li + li a {
+    position: relative;
+    border: none;
+  }
+
+  .dw-top-navbar .dw-top-navbar-menu ul li + li a:before {
+    content: '';
+    background-color: #BDC2C6;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 1px;
+  }
+
+  .dw-top-navbar .dw-top-navbar-toggle {
+    display: none;
+  }
 }
 
 .dw-text-list {

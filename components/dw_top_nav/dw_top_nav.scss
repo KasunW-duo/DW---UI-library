@@ -1,95 +1,66 @@
-.dw-btn{
-    position: relative;
-    display: inline-block;
-    background-color: $dw-brand-primary;
-    border: none;
-    padding: 10px 20px;
-    margin-left: 10px;
-    border-radius: $dw-border-radius;
-    cursor: pointer;
+.dw-navbar-logo {
+  img {
+    height:30px;
+  }
+}
+.dw-top-navbar {
+    background-color: #FFFFff;
+    padding: $dw-padding;
+}
 
-    height: auto;
-    font-family: 'AvenirNextLTPro-Demi', sans-serif;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 10px;
+.dw-top-navbar-menu {
+  li {
+    float: none;
 
-    -webkit-transition: border-color 0.2s, background-color 0.2s;
-    transition: border-color 0.2s, background-color 0.2s;
-
-    //Global hover
-    &:hover {
-        color: $dw-brand-primary;
-        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-        border-color: transparent!important;
-        background-color: #fff!important;
-        -webkit-transition: border-color 0.2s, background-color 0.2s;
-        transition: border-color 0.2s, background-color 0.2s;
+    a {
+      padding: 10px $dw-padding;
+      color: $dw-light-text;
+      display: block;
     }
+  }
 
-    &>span {
-        &>i{
-            &.material-icons {
-                font-size: 20px;
-                position: absolute;
-                height: 20px;
-                width: 20px;
-                top: 0;
-                bottom: 0;
-                left: 5px;
-                margin: auto;
+  li + li {
+    a {
+      border-bottom: 1px solid $dw-light-text;
+    }
+  }
+}
+@media only screen and (min-width : 768px) {
+  .dw-top-navbar-menu {
+    float: right;
+  }
+
+  .dw-top-navbar {
+    .dw-top-navbar-menu {
+      display: block;
+
+      ul {
+        display: block;
+
+        li {
+          float: left;
+        }
+
+        li + li {
+          a {
+            position: relative;
+            border:none;
+
+            &:before {
+              content:'';
+              background-color: $dw-light-text;
+              position: absolute;
+              left: 0;
+              height:20px;
+              width: 1px;
             }
+          }
         }
+      }
     }
 
-    //Button in a toolbar use as a tool
-    &.dw-tool {
-        padding: 5px;
-        margin: 0 0 0 10px;
-        text-align: center;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border-width: 1px;
-        border-color: #fff!important;
-
-        &>span {
-            &>i.material-icons {
-                height: 25px;
-                width: 25px;
-                left: 4px;
-                line-height: 26px;
-            }
-        }
+    .dw-top-navbar-toggle {
+      display: none;
     }
-
-    // Default button without no special state represented
-    &.dw-default {
-        border-color: $dw-accent;
-
-        &:hover {
-            color: $dw-brand-primary;
-        }
-    }
-
-    //Button for a Success scenario
-    &.dw-success {
-        border-color: $dw-success;
-        color: $dw-success;
-        background-color: $dw-success-faded;
-    }
-
-    //Button for a Failed scenario
-    &.dw-error {
-        border-color: $dw-error;
-        color: $dw-error;
-        background-color: $dw-error-faded;
-    }
-
-    //Button with an icon
-    &.dw-iconed {
-        padding-left: 30px;
-        padding-right: 10px;
-    }
+  }
 }
