@@ -50,28 +50,6 @@
           font-size: 28px;
         }
       }
-
-      .panel-collapse {
-        ul {
-          li {
-            a {
-              padding: 6px 0 6px 50px;
-              background: $dw-brand-light;
-              font-size: 12px;
-
-              &:before {
-                content: '';
-                background: $dw-light-text;
-                height: 20px;
-                width: 1px;
-                position: absolute;
-                left: 33px;
-                top: 4px;
-              }
-            }
-          }
-        }
-      }
     }
 
     .dw-multilevel-nav {
@@ -89,6 +67,34 @@
 
         i {
           color: $dw-brand-primary;
+        }
+      }
+
+      .dw-multilevel-second {
+        li {
+          a {
+            padding: 6px 0 6px 50px;
+            background: $dw-brand-light;
+            font-size: 12px;
+
+            &:before {
+              content: '';
+              background: $dw-light-text;
+              height: 20px;
+              width: 1px;
+              position: absolute;
+              left: 33px;
+              top: 4px;
+            }
+          }
+        }
+
+        .dw-active {
+          a {
+            &:before {
+              background-color: $dw-brand-primary;
+            }
+          }
         }
       }
 
@@ -121,18 +127,17 @@
   padding: $dw-padding;
 }
 
-.dw-multilevel-second {
-  ul {
-    padding-left: 15px;
-    li {
-      a {
-        background: transparent !important;
-        border-bottom: none;
+.dw-multilevel-third {
+  padding-left: 15px !important;
 
-        &:before {
-          display: none !important;
-        }
-      }
+  li {
+    a {
+       background: transparent !important;
+       border-bottom: none !important;
+
+       &:before {
+         display: none !important;
+       }
     }
   }
 }

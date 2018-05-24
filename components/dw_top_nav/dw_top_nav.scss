@@ -3,6 +3,17 @@
     height:30px;
   }
 }
+
+.dw-top-navbar-toggle {
+  background-color: $dw-brand-dark;
+  color: #FFFFff;
+  float: right;
+
+  span {
+    color: #FFFFff;
+  }
+}
+
 .dw-top-navbar {
     background-color: #FFFFff;
     padding: $dw-padding;
@@ -20,9 +31,7 @@
   }
 
   li + li {
-    a {
-      border-bottom: 1px solid $dw-light-text;
-    }
+    border-top: 1px solid $dw-light-text;
   }
 }
 @media only screen and (min-width : 768px) {
@@ -42,6 +51,8 @@
         }
 
         li + li {
+          border: none;
+
           a {
             position: relative;
             border:none;
