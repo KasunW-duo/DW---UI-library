@@ -77,6 +77,27 @@ body {
   }
 }
 
+.dw-search-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  color: #BDC2C6;
+}
+
+.dw-search-input {
+  padding: 10px;
+  border: none;
+  display: table-cell;
+  vertical-align: middle;
+  color: #BDC2C6;
+}
+
+.dw-search-input:focus {
+  outline: none;
+}
+
 .dw-profile-xs {
   height: 40px;
   width: 40px;
