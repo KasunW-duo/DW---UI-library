@@ -62,8 +62,8 @@ body {
   height: 12px;
   border: 2px solid #FFFFff;
   position: absolute;
-  top: 10px;
-  right: 14px;
+  top: 0px;
+  right: 0px;
   font-size: 10px;
 }
 
@@ -98,29 +98,10 @@ body {
   outline: none;
 }
 
-.dw-profile-xs {
-  height: 40px;
-  width: 40px;
-  overflow: hidden;
-  border-radius: 100%;
-}
-
-.dw-profile-xs img {
-  width: 100%;
-}
-
-.dw-profile {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.dw-profile-text {
-  display: table-cell !important;
-  vertical-align: middle;
-}
-
-.dw-profile-text:before {
-  display: none;
+.dw-float-list li {
+  float: left;
+  list-style: none;
+  padding: 6px;
 }
 
 .dw-navigation {
@@ -604,4 +585,51 @@ label {
 
 small {
   color: #BDC2C6;
+}
+
+.dw-profile-xs {
+  height: 40px;
+  width: 40px;
+}
+
+.dw-profile-sm {
+  height: 60px;
+  width: 60px;
+}
+
+.dw-profile-md {
+  height: 80px;
+  width: 80px;
+}
+
+.dw-profile-lg {
+  height: 100px;
+  width: 100px;
+}
+
+.dw-profile-circle img {
+  border-radius: 100%;
+}
+
+.dw-profile-square img {
+  border-radius: 15px;
+}
+
+.dw-profile {
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.dw-profile img {
+  width: 100%;
+}
+
+.dw-profile-text {
+  display: table-cell !important;
+  vertical-align: middle;
+}
+
+.dw-profile-text:before {
+  display: none;
 }

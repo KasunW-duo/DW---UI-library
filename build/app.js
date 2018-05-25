@@ -47,6 +47,12 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                     url: "/typography",
                     templateUrl: "components/dw_typography/dw_typography.html",
                     params: { comps : components['dw_typography'] }
+                })
+
+                .state('Images', {
+                    url: "/images",
+                    templateUrl: "components/dw_images/dw_images.html",
+                    params: { comps : components['dw_images'] }
                 });
 
         },

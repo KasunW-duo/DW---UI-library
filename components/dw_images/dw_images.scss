@@ -1,0 +1,50 @@
+.dw-profile-xs {
+    height: 40px;
+    width: 40px;
+}
+
+.dw-profile-sm {
+    height: 60px;
+    width: 60px;
+}
+
+.dw-profile-md {
+    height: 80px;
+    width: 80px;
+}
+
+.dw-profile-lg {
+    height: 100px;
+    width: 100px;
+}
+
+.dw-profile-circle {
+    img {
+        border-radius: 100%;
+    }
+}
+
+.dw-profile-square {
+    img {
+        border-radius: 15px;
+    }
+}
+
+.dw-profile {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.dw-profile-text {
+    display: table-cell !important;
+    vertical-align: middle;
+
+    &:before {
+        display: none;
+    }
+}

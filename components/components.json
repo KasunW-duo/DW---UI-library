@@ -32,10 +32,18 @@
     },
 
     "dw_typography": {
-    "name"              : "Typography",
-    "classname"         : "dw-typography",
-    "description"       : "This component is used as top navigation of the app",
-    "last_updated_by"   : "Reshika Fernando",
-    "last_updated_date" : "21-05-2018"
-  }
+      "name"              : "Typography",
+      "classname"         : "dw-typography",
+      "description"       : "This component is used as top navigation of the app",
+      "last_updated_by"   : "Reshika Fernando",
+      "last_updated_date" : "21-05-2018"
+    },
+
+    "dw_images": {
+      "name"              : "Images",
+      "classname"         : "dw-images",
+      "description"       : "This component is used as top navigation of the app",
+      "last_updated_by"   : "Reshika Fernando",
+      "last_updated_date" : "25-05-2018"
+    }
 }
