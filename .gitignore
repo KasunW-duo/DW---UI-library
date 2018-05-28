@@ -1,6 +1,7 @@
 # Third party sources #
 ######################
 node_modules/
+package-lock.json
 
 # IDE related sources #
 ######################
