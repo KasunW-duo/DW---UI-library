@@ -62,3 +62,61 @@ body {
     padding:6px;
   }
 }
+
+.row {
+  margin: 0;
+}
+
+.dw-text-center {
+  text-align: center;
+}
+
+.dw-channel-mail {
+  color: $dw-brand-primary;
+}
+
+.dw-channel-notification {
+  color: $dw-brand-secondary;
+}
+
+.dw-circle {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  i {
+    font-size: 21px;
+    line-height: 1.6;
+  }
+
+  &:hover {
+    color: #FFFFff;
+    text-decoration: none;
+  }
+}
+
+.dw-circle-primary {
+  background-color: $dw-brand-primary-light;
+  color: $dw-brand-primary;
+
+  &:hover {
+    background-color: $dw-brand-primary;
+  }
+}
+
+.dw-circle-seconday {
+  background-color: $dw-brand-secondary-light;
+  color: $dw-brand-secondary;
+
+  &:hover {
+    background-color: $dw-brand-secondary;
+  }
+}
+
+.dw-circle + .dw-circle {
+  margin-left: 6px;
+}

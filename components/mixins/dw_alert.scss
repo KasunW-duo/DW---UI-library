@@ -1,0 +1,26 @@
+.dw-alert {
+  border-radius: 15px;
+  padding:6px 8px;
+  text-align: center;
+  display: inline-block;
+}
+
+.dw-alert-danger {
+  background-color: #F6C6AE;
+  color: #F15B29;
+}
+
+.dw-alert-success {
+  background-color: #D0E4CA;
+  color: #82C566;
+}
+
+.dw-alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.dw-alert-low {
+  color: #1b1e21;
+  background-color: #d6d8d9;
+}

@@ -1,0 +1,109 @@
+.dw-table-filter {
+  margin: $dw-gap 0;
+
+  label {
+    margin-right: 10px;
+  }
+
+  .dw-float-list {
+
+    li {
+      padding: 0;
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+    }
+
+    li + li {
+      padding-left: 8px;
+    }
+  }
+}
+
+.dw-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+
+  thead {
+    th {
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+  }
+
+  th,td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    text-transform: capitalize;
+  }
+
+  tr {
+    &:nth-of-type(odd) {
+
+      td {
+        background-color: $dw-background;
+
+        &:first-child {
+          border-radius: 12px 0 0 12px;
+        }
+
+        &:last-child {
+          border-radius: 0 12px 12px 0;
+        }
+      }
+    }
+  }
+}
+
+.dw-table-user {
+  padding: 0;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
+
+    .dw-profile {
+      margin-right: $dw-gap;
+      float: left;
+    }
+  }
+}
+
+.dw-profile-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+
+.dw-pagination {
+  display: inline-block;
+
+  a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+
+    .active {
+      background-color: #4CAF50;
+      color: white;
+      border: 1px solid #4CAF50;
+    }
+  }
+}
+
+.dw-table-filter-left {
+    float: left;
+}
+
+.dw-table-filter-right {
+  float: right;
+}
+

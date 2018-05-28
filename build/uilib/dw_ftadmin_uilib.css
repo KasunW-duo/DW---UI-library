@@ -109,6 +109,64 @@ body {
   padding: 6px;
 }
 
+.row {
+  margin: 0;
+}
+
+.dw-text-center {
+  text-align: center;
+}
+
+.dw-channel-mail {
+  color: #EE437E;
+}
+
+.dw-channel-notification {
+  color: #68318E;
+}
+
+.dw-circle {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.dw-circle i {
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.dw-circle:hover {
+  color: #FFFFff;
+  text-decoration: none;
+}
+
+.dw-circle-primary {
+  background-color: #FFDEEB;
+  color: #EE437E;
+}
+
+.dw-circle-primary:hover {
+  background-color: #EE437E;
+}
+
+.dw-circle-seconday {
+  background-color: #F3E9FF;
+  color: #68318E;
+}
+
+.dw-circle-seconday:hover {
+  background-color: #68318E;
+}
+
+.dw-circle + .dw-circle {
+  margin-left: 6px;
+}
+
 .dw-navigation {
   background-color: #131D2F;
   height: 100%;
@@ -235,6 +293,78 @@ body {
 
 .dw-multilevel-third li a:before {
   display: none !important;
+}
+
+.dw-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dw-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dw-dropdown i {
+  float: right;
+  color: #EE437E;
+  margin-right: -8px;
+  margin-left: 10px;
+}
+
+.dw-dropdown-btn {
+  padding: 5px 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
+  border-radius: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dw-alert {
+  border-radius: 15px;
+  padding: 6px 8px;
+  text-align: center;
+  display: inline-block;
+}
+
+.dw-alert-danger {
+  background-color: #F6C6AE;
+  color: #F15B29;
+}
+
+.dw-alert-success {
+  background-color: #D0E4CA;
+  color: #82C566;
+}
+
+.dw-alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.dw-alert-low {
+  color: #1b1e21;
+  background-color: #d6d8d9;
 }
 
 .dw-btn {
@@ -525,6 +655,106 @@ body {
   .dw-top-navbar .dw-top-navbar-toggle {
     display: none;
   }
+}
+
+.dw-table-filter {
+  margin: 15px 0;
+}
+
+.dw-table-filter label {
+  margin-right: 10px;
+}
+
+.dw-table-filter .dw-float-list li {
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.dw-table-filter .dw-float-list li + li {
+  padding-left: 8px;
+}
+
+.dw-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.dw-table thead th {
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.dw-table th,
+.dw-table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.dw-table tr:nth-of-type(odd) td {
+  background-color: #F2F4F8;
+}
+
+.dw-table tr:nth-of-type(odd) td:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+.dw-table tr:nth-of-type(odd) td:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.dw-table-user {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.dw-table-user li {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.dw-table-user li .dw-profile {
+  margin-right: 15px;
+  float: left;
+}
+
+.dw-profile-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+
+.dw-pagination {
+  display: inline-block;
+}
+
+.dw-pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.dw-pagination a .active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.dw-table-filter-left {
+  float: left;
+}
+
+.dw-table-filter-right {
+  float: right;
 }
 
 .dw-text-list {
