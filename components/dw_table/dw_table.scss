@@ -30,6 +30,17 @@
     th {
       vertical-align: middle;
       text-transform: uppercase;
+
+      .dw-dropdown {
+        float: right;
+
+        i {
+          margin-right: 0px;
+          margin-left: 0px;
+
+          font-size: 16px;
+        }
+      }
     }
   }
 
@@ -107,3 +118,19 @@
   float: right;
 }
 
+
+.dw-input {
+  padding: 8px 15px;
+  height: 46px;
+  border-radius: 8px;
+  border:1px solid $dw-light-text;
+
+  &:focus {
+    outline: none;
+    border-color: $dw-brand-secondary;
+  }
+}
+
+.dw-input-table {
+  height: 36px;
+}
