@@ -72,11 +72,11 @@ body {
 }
 
 .dw-channel-mail {
-  color: $dw-brand-primary;
+  color: $dw-theme-primary;
 }
 
 .dw-channel-notification {
-  color: $dw-brand-secondary;
+  color: $dw-theme-secondary;
 }
 
 .dw-circle {
@@ -100,20 +100,20 @@ body {
 }
 
 .dw-circle-primary {
-  background-color: $dw-brand-primary-light;
-  color: $dw-brand-primary;
+  background-color: $dw-theme-primary-light;
+  color: $dw-theme-primary;
 
   &:hover {
-    background-color: $dw-brand-primary;
+    background-color: $dw-theme-primary;
   }
 }
 
 .dw-circle-seconday {
-  background-color: $dw-brand-secondary-light;
-  color: $dw-brand-secondary;
+  background-color: $dw-theme-secondary-light;
+  color: $dw-theme-secondary;
 
   &:hover {
-    background-color: $dw-brand-secondary;
+    background-color: $dw-theme-secondary;
   }
 }
 
@@ -121,3 +121,17 @@ body {
   margin-left: 6px;
 }
 
+
+/********** Component View Styling *******************/
+
+.dw-component-header {
+  margin-bottom: $dw-gap-lg;
+  padding: $dw-padding;
+  background-color: $dw-background;
+  border-radius: $dw-border-radius;
+
+  h1 {
+    font-weight: $dw-font300;
+    font-size: 40px;
+  }
+}

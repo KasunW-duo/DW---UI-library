@@ -23,11 +23,11 @@
             top: 15px;
             width: 4px;
             height: calc(100% - 30px);
-            background: $dw-brand-secondary;
+            background: $dw-theme-secondary;
         }
 
         span {
-            color: $dw-brand-secondary;
+            color: $dw-theme-secondary;
         }
     }
 
@@ -38,8 +38,8 @@
 }
 
 .dw-subtitle {
-    margin: 0;
-    color: #808080;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .dw-information {

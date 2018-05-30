@@ -1,7 +1,7 @@
 .dw-btn{
     position: relative;
     display: inline-block;
-    background-color: $dw-brand-primary;
+    background-color: $dw-theme-primary;
     border: none;
     padding: 10px 20px;
     margin-left: 10px;
@@ -19,7 +19,7 @@
 
     //Global hover
     &:hover {
-        color: $dw-brand-primary;
+        color: $dw-theme-primary;
         -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         border-color: transparent!important;
@@ -69,7 +69,7 @@
         border-color: $dw-accent;
 
         &:hover {
-            color: $dw-brand-primary;
+            color: $dw-theme-primary;
         }
     }
 

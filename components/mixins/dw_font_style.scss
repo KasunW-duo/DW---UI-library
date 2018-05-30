@@ -1,24 +1,16 @@
 $open-sans: 'Open Sans', sans-serif;
 
-$font-size--lg : 24px;
-$font-size--md : 18px;
-$font-size--sm : 14px;
-$font-size--xs : 12px;
+$font-size--lg : 28px;
+$font-size--md : 21px;
+$font-size--sm : 18px;
+$font-size--xs : 14px;
+
+$dw-text700 : 700;
+$dw-font300 : 300;
 
 // Styles
 body {
   font-family: $open-sans;
-}
-.dw-text700 {
-  font-weight: 700;
-}
-
-.dw-font24 {
-  font-size: $font-size--lg;
-}
-
-.dw-status {
-
 }
 
 .dw-info-label {
@@ -31,19 +23,19 @@ body {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: $font-size--lg;
 }
 
 h2 {
-  font-size: 21px;
+  font-size: $font-size--md;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: $font-size--sm;
 }
 
 p {
-  font-size: 14px;
+  font-size: $font-size--xs;
 }
 
 .dw-text-uppercase {

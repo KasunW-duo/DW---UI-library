@@ -7,21 +7,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.dw-text700 {
-  font-weight: 700;
-}
-
-.dw-font24 {
-  font-size: 24px;
-}
-
 .dw-info-label {
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1.62px;
 }
 
 .dw-status {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 h1 {
@@ -33,7 +25,7 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 p {
@@ -167,132 +159,18 @@ body {
   margin-left: 6px;
 }
 
-.dw-navigation {
-  background-color: #131D2F;
-  height: 100%;
-  padding: 0;
-}
+/********** Component View Styling *******************/
 
-.dw-navigation ul {
-  padding: 0;
-}
-
-.dw-navigation ul li {
-  list-style: none;
-}
-
-.dw-navigation ul li a {
-  display: block;
-  border-bottom: 1px solid #333;
-  padding: 6px 25px;
-  color: #BDC2C6;
-  position: relative;
-}
-
-.dw-navigation ul li a i {
-  font-size: 18px;
-  float: left;
-  margin: 3px 8px 0 0;
-}
-
-.dw-navigation ul li a:hover {
-  background: #2C3E50;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.dw-navigation ul li a:hover:before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  left: 0;
-  background-color: #EE437E;
-  top: 0;
-}
-
-.dw-navigation ul li a:hover i {
-  color: #EE437E;
-}
-
-.dw-navigation ul li a .chevron {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 28px;
-}
-
-.dw-navigation ul .dw-multilevel-nav a:before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  left: 0;
-  background-color: #EE437E;
-  top: 0;
-}
-
-.dw-navigation ul .dw-multilevel-nav a i {
-  color: #EE437E;
-}
-
-.dw-navigation ul .dw-multilevel-nav .dw-multilevel-second li a {
-  padding: 6px 0 6px 50px;
-  background: #2C3E50;
-  font-size: 12px;
-}
-
-.dw-navigation ul .dw-multilevel-nav .dw-multilevel-second li a:before {
-  content: '';
-  background: #BDC2C6;
-  height: 20px;
-  width: 1px;
-  position: absolute;
-  left: 33px;
-  top: 4px;
-}
-
-.dw-navigation ul .dw-multilevel-nav .dw-multilevel-second .dw-active a:before {
-  background-color: #EE437E;
-}
-
-.dw-navigation ul .dw-multilevel-nav .collapsed {
-  border: none;
-}
-
-.dw-navigation ul .dw-multilevel-nav .collapsed:before {
-  display: none;
-}
-
-.dw-navigation ul .dw-multilevel-nav .collapsed i {
-  color: #BDC2C6;
-}
-
-.dw-navigation-title {
-  text-transform: uppercase;
-  color: #BDC2C6;
-  font-size: 16px;
-  padding: 25px;
-}
-
-.dw-navigation-view {
-  margin: 25px 15px;
-  background-color: #FFFFff;
-  border-radius: 8px;
+.dw-component-header {
+  margin-bottom: 30px;
   padding: 15px;
+  background-color: #F2F4F8;
+  border-radius: 8px;
 }
 
-.dw-multilevel-third {
-  padding-left: 15px !important;
-}
-
-.dw-multilevel-third li a {
-  background: transparent !important;
-  border-bottom: none !important;
-}
-
-.dw-multilevel-third li a:before {
-  display: none !important;
+.dw-component-header h1 {
+  font-weight: 300;
+  font-size: 40px;
 }
 
 .dw-dropdown {
@@ -513,12 +391,12 @@ body {
 }
 
 .dw-call-info .dw-call-info-label {
-  font-size: 18px;
+  font-size: 21px;
   letter-spacing: 1.62px;
 }
 
 .dw-call-info .dw-call-info-status {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .dw-call-info .dw-inbound {
@@ -829,8 +707,8 @@ body {
 }
 
 .dw-subtitle {
-  margin: 0;
-  color: #808080;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .dw-information h3 {
@@ -853,49 +731,177 @@ small {
   color: #BDC2C6;
 }
 
-.dw-profile-xs {
+.dw-user-xs {
   height: 40px;
   width: 40px;
 }
 
-.dw-profile-sm {
+.dw-user-sm {
   height: 60px;
   width: 60px;
 }
 
-.dw-profile-md {
+.dw-user-md {
   height: 80px;
   width: 80px;
 }
 
-.dw-profile-lg {
+.dw-user-lg {
   height: 100px;
   width: 100px;
 }
 
-.dw-profile-circle img {
+.dw-user-circle img {
   border-radius: 100%;
 }
 
-.dw-profile-square img {
+.dw-user-square img {
   border-radius: 15px;
 }
 
-.dw-profile {
+.dw-user {
   display: table-cell;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.dw-profile img {
+.dw-user img {
   width: 100%;
 }
 
-.dw-profile-text {
+.dw-user-text {
   display: table-cell !important;
   vertical-align: middle;
 }
 
-.dw-profile-text:before {
+.dw-user-text:before {
   display: none;
+}
+
+.dw-navigation {
+  background-color: #131D2F;
+  height: 100%;
+  padding: 0;
+}
+
+.dw-navigation ul {
+  padding: 0;
+}
+
+.dw-navigation ul li {
+  list-style: none;
+}
+
+.dw-navigation ul li a {
+  display: block;
+  border-bottom: 1px solid #333;
+  padding: 6px 25px;
+  color: #BDC2C6;
+  position: relative;
+}
+
+.dw-navigation ul li a i {
+  font-size: 18px;
+  float: left;
+  margin: 3px 8px 0 0;
+}
+
+.dw-navigation ul li a:hover {
+  background: #2C3E50;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dw-navigation ul li a:hover:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  left: 0;
+  background-color: #EE437E;
+  top: 0;
+}
+
+.dw-navigation ul li a:hover i {
+  color: #EE437E;
+}
+
+.dw-navigation ul li a .chevron {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 28px;
+}
+
+.dw-navigation ul .dw-multilevel-nav a:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  left: 0;
+  background-color: #EE437E;
+  top: 0;
+}
+
+.dw-navigation ul .dw-multilevel-nav a i {
+  color: #EE437E;
+}
+
+.dw-navigation ul .dw-multilevel-nav .dw-multilevel-second li a {
+  padding: 6px 0 6px 50px;
+  background: #2C3E50;
+  font-size: 12px;
+}
+
+.dw-navigation ul .dw-multilevel-nav .dw-multilevel-second li a:before {
+  content: '';
+  background: #BDC2C6;
+  height: 20px;
+  width: 1px;
+  position: absolute;
+  left: 33px;
+  top: 4px;
+}
+
+.dw-navigation ul .dw-multilevel-nav .dw-multilevel-second .dw-active a:before {
+  background-color: #EE437E;
+}
+
+.dw-navigation ul .dw-multilevel-nav .collapsed {
+  border: none;
+}
+
+.dw-navigation ul .dw-multilevel-nav .collapsed:before {
+  display: none;
+}
+
+.dw-navigation ul .dw-multilevel-nav .collapsed i {
+  color: #BDC2C6;
+}
+
+.dw-navigation-title {
+  text-transform: uppercase;
+  color: #BDC2C6;
+  font-size: 16px;
+  padding: 25px;
+}
+
+.dw-navigation-view {
+  margin: 25px 15px;
+  background-color: #FFFFff;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.dw-multilevel-third {
+  padding-left: 15px !important;
+}
+
+.dw-multilevel-third li a {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.dw-multilevel-third li a:before {
+  display: none !important;
 }

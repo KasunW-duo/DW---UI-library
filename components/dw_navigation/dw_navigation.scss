@@ -1,5 +1,5 @@
 .dw-navigation {
-  background-color: $dw-brand-dark;
+  background-color: $dw-theme-dark;
   height: 100%;
   padding:0;
 
@@ -24,7 +24,7 @@
         }
 
         &:hover {
-          background: $dw-brand-light;
+          background: $dw-theme-light;
           text-decoration: none;
           color: #ffffff;
 
@@ -34,12 +34,12 @@
             height: 100%;
             width: 2px;
             left: 0;
-            background-color: $dw-brand-primary;
+            background-color: $dw-theme-primary;
             top:0;
           }
 
           i {
-            color: $dw-brand-primary;
+            color: $dw-theme-primary;
           }
         }
 
@@ -61,12 +61,12 @@
           height: 100%;
           width: 2px;
           left: 0;
-          background-color: $dw-brand-primary;
+          background-color: $dw-theme-primary;
           top:0;
         }
 
         i {
-          color: $dw-brand-primary;
+          color: $dw-theme-primary;
         }
       }
 
@@ -74,7 +74,7 @@
         li {
           a {
             padding: 6px 0 6px 50px;
-            background: $dw-brand-light;
+            background: $dw-theme-light;
             font-size: 12px;
 
             &:before {
@@ -92,7 +92,7 @@
         .dw-active {
           a {
             &:before {
-              background-color: $dw-brand-primary;
+              background-color: $dw-theme-primary;
             }
           }
         }

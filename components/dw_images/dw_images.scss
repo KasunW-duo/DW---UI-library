@@ -1,36 +1,36 @@
-.dw-profile-xs {
+.dw-user-xs {
     height: 40px;
     width: 40px;
 }
 
-.dw-profile-sm {
+.dw-user-sm {
     height: 60px;
     width: 60px;
 }
 
-.dw-profile-md {
+.dw-user-md {
     height: 80px;
     width: 80px;
 }
 
-.dw-profile-lg {
+.dw-user-lg {
     height: 100px;
     width: 100px;
 }
 
-.dw-profile-circle {
+.dw-user-circle {
     img {
         border-radius: 100%;
     }
 }
 
-.dw-profile-square {
+.dw-user-square {
     img {
         border-radius: 15px;
     }
 }
 
-.dw-profile {
+.dw-user {
     display: table-cell;
     vertical-align: middle;
     overflow: hidden;
@@ -40,7 +40,7 @@
     }
 }
 
-.dw-profile-text {
+.dw-user-text {
     display: table-cell !important;
     vertical-align: middle;
 
