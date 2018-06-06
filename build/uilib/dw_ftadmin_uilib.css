@@ -145,7 +145,7 @@ body {
 }
 
 .dw-circle + .dw-circle {
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 /********** Component View Styling *******************/
@@ -174,7 +174,7 @@ body {
 .dw-dropdown i {
   float: right;
   color: #EE437E;
-  margin-right: -8px;
+  margin-right: -10px;
   margin-left: 10px;
 }
 
@@ -242,7 +242,7 @@ body {
   border: none;
   padding: 10px 20px;
   margin-left: 10px;
-  border-radius: 8px;
+  border-radius: 15px;
   cursor: pointer;
   height: auto;
   font-family: 'AvenirNextLTPro-Demi', sans-serif;
@@ -276,7 +276,7 @@ body {
 
 .dw-btn.dw-tool {
   padding: 5px;
-  margin: 0 0 0 4px;
+  margin: 0 0 0 5px;
   text-align: center;
   width: 35px;
   height: 35px;
@@ -326,7 +326,7 @@ body {
   -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
   -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
   box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: hidden;
   margin: 0 0 15px;
 }
@@ -367,7 +367,7 @@ body {
 .dw-call-info {
   background-color: #F2F4F8;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 15px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -582,11 +582,11 @@ body {
 }
 
 .dw-table tr:nth-of-type(odd) td:first-child {
-  border-radius: 12px 0 0 12px;
+  border-radius: 15px 0 0 15px;
 }
 
 .dw-table tr:nth-of-type(odd) td:last-child {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 15px 15px 0;
 }
 
 .dw-table-user {
@@ -792,7 +792,7 @@ small {
 .dw-navigation ul li a i {
   font-size: 18px;
   float: left;
-  margin: 3px 8px 0 0;
+  margin: 5px 10px 0 0;
 }
 
 .dw-navigation ul li a:hover {
@@ -876,7 +876,7 @@ small {
 }
 
 .dw-navigation-view {
-  margin: 25px 15px;
+  margin: 20px 10px;
   background-color: #FFFFff;
   border-radius: 8px;
   padding: 15px;
@@ -946,7 +946,7 @@ small {
 .dw-multilevel-list li i {
   font-size: 18px;
   float: left;
-  margin: 3px 8px 0 0;
+  margin: 5px 10px 0 0;
 }
 
 .dw-multilevel-list li .chevron {

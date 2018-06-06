@@ -20,7 +20,7 @@
         i {
           font-size: 18px;
           float: left;
-          margin: 3px 8px 0 0;
+          margin: $dw-margin-xs $dw-margin-sm 0 0;
         }
 
         &:hover {
@@ -121,9 +121,9 @@
 }
 
 .dw-navigation-view {
-  margin: 25px 15px;
+  margin: $dw-margin-md $dw-margin-sm;
   background-color: #FFFFff;
-  border-radius: 8px;
+  border-radius: $dw-border-radius-xs;
   padding: $dw-padding;
 }
 

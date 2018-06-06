@@ -11,7 +11,7 @@ body {
 
 .dw-badge {
   background-color: #68318E;
-  border-radius: 100%;
+  border-radius: $dw-border-radius-lg;
   width: 12px;
   height: 12px;
   border: 2px solid #FFFFff;
@@ -74,7 +74,7 @@ body {
   width: 32px;
   height: 32px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: $dw-border-radius-md;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -109,7 +109,7 @@ body {
 }
 
 .dw-circle + .dw-circle {
-  margin-left: 6px;
+  margin-left: $dw-margin-xs;
 }
 
 
@@ -119,7 +119,7 @@ body {
   margin-bottom: $dw-gap-lg;
   padding: $dw-padding;
   background-color: $dw-background;
-  border-radius: $dw-border-radius;
+  border-radius: $dw-border-radius-xs;
 
   h1 {
     font-weight: $dw-font300;

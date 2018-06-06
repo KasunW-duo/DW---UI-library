@@ -11,8 +11,8 @@
   i {
     float: right;
     color: $dw-theme-primary;
-    margin-right: -8px;
-    margin-left: 10px;
+    margin-right: -$dw-margin-sm;
+    margin-left: $dw-margin-sm;
   }
 }
 
@@ -23,7 +23,7 @@
   -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
   -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
   box-shadow: 0 0px 4px 0 rgba(130, 152, 174, 0.5), 0 0px 0px 0 rgba(130, 152, 174, 0.5);
-  border-radius: 8px;
+  border-radius: $dw-border-radius-xs;
   display: flex;
 }
 

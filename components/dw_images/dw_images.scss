@@ -20,13 +20,13 @@
 
 .dw-image-circle {
     img {
-        border-radius: 100%;
+        border-radius: $dw-border-radius-lg ;
     }
 }
 
 .dw-image-square {
     img {
-        border-radius: 15px;
+        border-radius: $dw-border-radius-sm;
     }
 }
 

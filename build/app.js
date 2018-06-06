@@ -19,6 +19,13 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                     templateUrl : "components/dw_card/dw_card.html",
                     params: { comps : components['dw_card'] }
                 })
+
+                .state('Buttons', {
+                    url: "/button",
+                    templateUrl: "components/dw_btn/dw_btn.html",
+                    params: { comps : components['dw_btn'] }
+                })
+
                 .state('Generic Card', {
                     url : "/generic_card",
                     templateUrl : "components/dw_card/dw_card.html",

@@ -3,9 +3,9 @@
     -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
     -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
     box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
-    border-radius: $dw-border-radius;
+    border-radius: $dw-border-radius-sm;
     overflow: hidden;
-    margin: 0 0 15px;
+    margin: 0 0 $dw-gap;
 
     // Card header
     .dw-card-header {

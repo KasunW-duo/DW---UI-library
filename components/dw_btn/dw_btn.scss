@@ -4,15 +4,15 @@
     background-color: $dw-theme-primary;
     border: none;
     padding: 10px 20px;
-    margin-left: 10px;
-    border-radius: $dw-border-radius;
+    margin-left: $dw-margin-sm;
+    border-radius: $dw-border-radius-sm;
     cursor: pointer;
 
     height: auto;
     font-family: 'AvenirNextLTPro-Demi', sans-serif;
     color: #fff;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: $dw-margin-sm;
 
     -webkit-transition: border-color 0.2s, background-color 0.2s;
     transition: border-color 0.2s, background-color 0.2s;
@@ -46,11 +46,11 @@
     //Button in a toolbar use as a tool
     &.dw-tool {
         padding: 5px;
-        margin: 0 0 0 4px;
+        margin: 0 0 0 $dw-margin-xs;
         text-align: center;
         width: 35px;
         height: 35px;
-        border-radius: 50%;
+        border-radius: $dw-border-radius-md;
         border-width: 1px;
         border-color: #fff!important;
 
