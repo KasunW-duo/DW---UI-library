@@ -53,6 +53,12 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                     url: "/images",
                     templateUrl: "components/dw_images/dw_images.html",
                     params: { comps : components['dw_images'] }
+                })
+
+                .state('Lists', {
+                    url: "/list",
+                    templateUrl: "components/dw_list/dw_list.html",
+                    params: { comps : components['dw_list'] }
                 });
 
         },

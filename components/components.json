@@ -39,11 +39,11 @@
       "last_updated_date" : "21-05-2018"
     },
 
-    "dw_images": {
-      "name"              : "Images",
-      "classname"         : "dw-images",
-      "description"       : "This component is used as top navigation of the app",
+    "dw_list": {
+      "name"              : "Lists",
+      "classname"         : "dw-list",
+      "description"       : "This component represent all the list styles of the theme",
       "last_updated_by"   : "Reshika Fernando",
-      "last_updated_date" : "25-05-2018"
+      "last_updated_date" : "06-06-2018"
     }
 }

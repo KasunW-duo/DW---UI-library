@@ -1,36 +1,36 @@
-.dw-user-xs {
+.dw-image-xs {
     height: 40px;
     width: 40px;
 }
 
-.dw-user-sm {
+.dw-image-sm {
     height: 60px;
     width: 60px;
 }
 
-.dw-user-md {
+.dw-image-md {
     height: 80px;
     width: 80px;
 }
 
-.dw-user-lg {
+.dw-image-lg {
     height: 100px;
     width: 100px;
 }
 
-.dw-user-circle {
+.dw-image-circle {
     img {
         border-radius: 100%;
     }
 }
 
-.dw-user-square {
+.dw-image-square {
     img {
         border-radius: 15px;
     }
 }
 
-.dw-user {
+.dw-image {
     display: table-cell;
     vertical-align: middle;
     overflow: hidden;
@@ -40,7 +40,7 @@
     }
 }
 
-.dw-user-text {
+.dw-image-text {
     display: table-cell !important;
     vertical-align: middle;
 

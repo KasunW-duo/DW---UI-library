@@ -90,17 +90,6 @@ body {
   outline: none;
 }
 
-.dw-float-list {
-  padding: 0;
-  width: 100%;
-}
-
-.dw-float-list li {
-  float: left;
-  list-style: none;
-  padding: 6px;
-}
-
 .row {
   margin: 0;
 }
@@ -666,11 +655,11 @@ body {
   height: 36px;
 }
 
-.dw-text-list {
+.dw-typo-list {
   padding: 0;
 }
 
-.dw-text-list li {
+.dw-typo-list li {
   list-style: none;
   padding: 15px;
 }
@@ -731,50 +720,50 @@ small {
   color: #BDC2C6;
 }
 
-.dw-user-xs {
+.dw-image-xs {
   height: 40px;
   width: 40px;
 }
 
-.dw-user-sm {
+.dw-image-sm {
   height: 60px;
   width: 60px;
 }
 
-.dw-user-md {
+.dw-image-md {
   height: 80px;
   width: 80px;
 }
 
-.dw-user-lg {
+.dw-image-lg {
   height: 100px;
   width: 100px;
 }
 
-.dw-user-circle img {
+.dw-image-circle img {
   border-radius: 100%;
 }
 
-.dw-user-square img {
+.dw-image-square img {
   border-radius: 15px;
 }
 
-.dw-user {
+.dw-image {
   display: table-cell;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.dw-user img {
+.dw-image img {
   width: 100%;
 }
 
-.dw-user-text {
+.dw-image-text {
   display: table-cell !important;
   vertical-align: middle;
 }
 
-.dw-user-text:before {
+.dw-image-text:before {
   display: none;
 }
 
@@ -904,4 +893,65 @@ small {
 
 .dw-multilevel-third li a:before {
   display: none !important;
+}
+
+.dw-list {
+  padding: 0;
+  width: 100%;
+}
+
+.dw-float-list li {
+  float: left;
+  list-style: none;
+  padding: 0 6px;
+}
+
+.dw-list-cell li {
+  display: table-cell;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0 6px;
+}
+
+.dw-text-list {
+  padding: 0 0 0 15px;
+}
+
+.dw-multilevel-list a {
+  color: #131D2F;
+}
+
+.dw-multilevel-list li {
+  position: relative;
+  list-style: none;
+}
+
+.dw-multilevel-list li i {
+  font-size: 18px;
+  float: left;
+  margin: 3px 8px 0 0;
+}
+
+.dw-multilevel-list li .chevron {
+  position: absolute;
+  top: -2px;
+  font-size: 28px;
+  margin: 0;
+}
+
+.dw-multilevel-list li ul li a:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  left: 0;
+  background-color: #EE437E;
+  top: 0;
+}
+
+.dw-multilevel-list ul li a {
+  display: block;
+  padding: 6px 25px;
+  color: #BDC2C6;
+  position: relative;
 }
