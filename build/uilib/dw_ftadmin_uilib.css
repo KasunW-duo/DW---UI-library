@@ -895,6 +895,23 @@ small {
   display: none !important;
 }
 
+.dw-sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 78px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#dw-main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
 .dw-list {
   padding: 0;
   width: 100%;
