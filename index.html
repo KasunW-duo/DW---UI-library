@@ -37,51 +37,51 @@
     <div class="row margin0">
         <div class="container">
             <div id="mySidenav" class="dw-sidenav" onmouseleave="closeNav()">
-            <div class="dw-navigation" id="sidenav">
-                <ul>
-                    <li class="dw-navigation-title dw-text700">General testing</li>
-                    <li ng-repeat="b in data">
-                        <a ui-sref="{{ b.name }}">
-                            <i class="material-icons">
-                                favorite
-                            </i>
-                            {{ b.name }}
-                        </a>
-                    </li>
-                    <li class="dw-multilevel-nav">
-                        <a data-toggle="collapse" href="#collapse1">
-                            <i class="material-icons">
-                                favorite
-                            </i>
-                            Collapsible list group
+                <div class="dw-navigation" id="sidenav">
+                    <ul>
+                        <li class="dw-navigation-title dw-text700">General testing</li>
+                        <li ng-repeat="b in data">
+                            <a ui-sref="{{ b.name }}">
+                                <i class="material-icons">
+                                    favorite
+                                </i>
+                                {{ b.name }}
+                            </a>
+                        </li>
+                        <li class="dw-multilevel-nav">
+                            <a data-toggle="collapse" href="#collapse1">
+                                <i class="material-icons">
+                                    favorite
+                                </i>
+                                Collapsible list group
 
-                            <i class="material-icons pull-right chevron">
-                                arrow_drop_down
-                            </i>
-                        </a>
-                        <ul class="dw-multilevel-second">
-                            <li class="dw-active">
-                                <a data-toggle="collapse" href="#collapse2" class="dw-multilevel-first">
-                                    Collapsible list group
+                                <i class="material-icons pull-right chevron">
+                                    arrow_drop_down
+                                </i>
+                            </a>
+                            <ul class="dw-multilevel-second">
+                                <li class="dw-active">
+                                    <a data-toggle="collapse" href="#collapse2" class="dw-multilevel-first">
+                                        Collapsible list group
 
-                                    <i class="material-icons pull-right chevron">
-                                        arrow_drop_down
-                                    </i>
-                                </a>
+                                        <i class="material-icons pull-right chevron">
+                                            arrow_drop_down
+                                        </i>
+                                    </a>
 
-                                <ul class="dw-multilevel-third">
-                                    <li><a href="">Third Level Link</a></li>
-                                    <li><a href="">Third Level Link</a></li>
-                                    <li><a href="">Third Level Link</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="" class="dw-multilevel-first">One Link</a></li>
-                            <li><a href="" class="dw-multilevel-first">One Link</a></li>
-                        </ul>
+                                    <ul class="dw-multilevel-third">
+                                        <li><a href="">Third Level Link</a></li>
+                                        <li><a href="">Third Level Link</a></li>
+                                        <li><a href="">Third Level Link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="dw-multilevel-first">One Link</a></li>
+                                <li><a href="" class="dw-multilevel-first">One Link</a></li>
+                            </ul>
 
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-12"  id="dw-main">
                 <div class="dw-navigation-view">

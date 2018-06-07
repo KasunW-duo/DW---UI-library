@@ -69,15 +69,6 @@ body {
   }
 }
 
-.dw-search-btn {
-  background: transparent;
-  border: 0;
-  padding: 0;
-  display: table-cell;
-  vertical-align: middle;
-  color: #BDC2C6;
-}
-
 .dw-search-input {
   padding: 10px;
   border: none;
@@ -104,48 +95,6 @@ body {
 
 .dw-channel-notification {
   color: #68318E;
-}
-
-.dw-circle {
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  border-radius: 50%;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-}
-
-.dw-circle i {
-  font-size: 21px;
-  line-height: 1.6;
-}
-
-.dw-circle:hover {
-  color: #FFFFff;
-  text-decoration: none;
-}
-
-.dw-circle-primary {
-  background-color: #FFDEEB;
-  color: #EE437E;
-}
-
-.dw-circle-primary:hover {
-  background-color: #EE437E;
-}
-
-.dw-circle-seconday {
-  background-color: #F3E9FF;
-  color: #68318E;
-}
-
-.dw-circle-seconday:hover {
-  background-color: #68318E;
-}
-
-.dw-circle + .dw-circle {
-  margin-left: 5px;
 }
 
 /********** Component View Styling *******************/
@@ -240,9 +189,8 @@ body {
   display: inline-block;
   background-color: #EE437E;
   border: none;
-  padding: 10px 20px;
-  margin-left: 10px;
-  border-radius: 15px;
+  padding: 10px 30px;
+  border-radius: 8px;
   cursor: pointer;
   height: auto;
   font-family: 'AvenirNextLTPro-Demi', sans-serif;
@@ -263,20 +211,14 @@ body {
   transition: border-color 0.2s, background-color 0.2s;
 }
 
-.dw-btn > span > i.material-icons {
-  font-size: 18px;
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 0;
-  bottom: 0;
-  left: 5px;
-  margin: auto;
+.dw-btn > i.material-icons {
+  float: left;
+  margin-right: 5px;
+  font-size: 21px;
 }
 
 .dw-btn.dw-tool {
   padding: 5px;
-  margin: 0 0 0 5px;
   text-align: center;
   width: 35px;
   height: 35px;
@@ -312,13 +254,78 @@ body {
   background-color: #FFDEEB;
 }
 
-.dw-btn.dw-iconed {
-  padding-left: 30px;
-  padding-right: 10px;
-}
-
 .dw-btn-sm {
   padding: 6px 12px;
+}
+
+.dw-pagination {
+  display: inline-block;
+}
+
+.dw-pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.dw-pagination a .active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.dw-circle {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.dw-circle i {
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.dw-circle:hover {
+  color: #FFFFff;
+  text-decoration: none;
+}
+
+.dw-circle-primary {
+  background-color: #FFDEEB;
+  color: #EE437E;
+}
+
+.dw-circle-primary:hover {
+  background-color: #EE437E;
+}
+
+.dw-circle-seconday {
+  background-color: #F3E9FF;
+  color: #68318E;
+}
+
+.dw-circle-seconday:hover {
+  background-color: #68318E;
+}
+
+.dw-circle + .dw-circle {
+  margin-left: 5px;
+}
+
+.dw-btn-flat {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  color: #BDC2C6;
 }
 
 .dw-card {
@@ -610,25 +617,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 140px;
-}
-
-.dw-pagination {
-  display: inline-block;
-}
-
-.dw-pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-}
-
-.dw-pagination a .active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
 }
 
 .dw-table-filter-left {

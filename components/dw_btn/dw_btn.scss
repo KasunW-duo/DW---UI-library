@@ -3,9 +3,8 @@
     display: inline-block;
     background-color: $dw-theme-primary;
     border: none;
-    padding: 10px 20px;
-    margin-left: $dw-margin-sm;
-    border-radius: $dw-border-radius-sm;
+    padding: $dw-gap-sm $dw-gap-lg;
+    border-radius: $dw-border-radius-xs;
     cursor: pointer;
 
     height: auto;
@@ -28,25 +27,18 @@
         transition: border-color 0.2s, background-color 0.2s;
     }
 
-    &>span {
-        &>i{
-            &.material-icons {
-                font-size: 18px;
-                position: absolute;
-                height: 20px;
-                width: 20px;
-                top: 0;
-                bottom: 0;
-                left: 5px;
-                margin: auto;
-            }
+    &>i{
+        &.material-icons {
+            float: left;
+            margin-right: 5px;
+            font-size: 21px;
         }
     }
+
 
     //Button in a toolbar use as a tool
     &.dw-tool {
         padding: 5px;
-        margin: 0 0 0 $dw-margin-xs;
         text-align: center;
         width: 35px;
         height: 35px;
@@ -86,14 +78,82 @@
         color: $dw-error;
         background-color: $dw-error-faded;
     }
-
-    //Button with an icon
-    &.dw-iconed {
-        padding-left: 30px;
-        padding-right: 10px;
-    }
 }
 
 .dw-btn-sm {
     padding: 6px 12px;
+}
+
+.dw-pagination {
+     display: inline-block;
+
+     a {
+         color: black;
+         float: left;
+         padding: 8px 16px;
+         text-decoration: none;
+         transition: background-color .3s;
+         border: 1px solid #ddd;
+
+         .active {
+             background-color: #4CAF50;
+             color: white;
+             border: 1px solid #4CAF50;
+         }
+     }
+ }
+
+
+.dw-circle {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: $dw-border-radius-md;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    i {
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+    &:hover {
+        color: #FFFFff;
+        text-decoration: none;
+    }
+}
+
+.dw-circle-primary {
+    background-color: $dw-theme-primary-light;
+    color: $dw-theme-primary;
+
+    &:hover {
+        background-color: $dw-theme-primary;
+    }
+}
+
+.dw-circle-seconday {
+    background-color: $dw-theme-secondary-light;
+    color: $dw-theme-secondary;
+
+    &:hover {
+        background-color: $dw-theme-secondary;
+    }
+}
+
+.dw-circle + .dw-circle {
+    margin-left: $dw-margin-xs;
+}
+
+
+.dw-btn-flat {
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+    display: table-cell;
+    vertical-align: middle;
+
+    color: $dw-light-text;
 }

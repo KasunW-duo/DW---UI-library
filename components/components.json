@@ -48,7 +48,7 @@
     },
 
     "dw_btn": {
-      "name": "Button",
+      "name": "Buttons",
       "classname": "dw-btn",
       "description": "This component is used as a general purpose of button styling",
       "last_updated_by": "Reshika Fernando",

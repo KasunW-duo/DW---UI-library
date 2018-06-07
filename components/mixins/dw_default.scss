@@ -30,17 +30,6 @@ body {
   }
 }
 
-.dw-search-btn {
-  background: transparent;
-  border: 0;
-  padding: 0;
-
-  display: table-cell;
-  vertical-align: middle;
-
-  color: $dw-light-text;
-}
-
 .dw-search-input {
   padding: 10px;
   border: none;
@@ -68,48 +57,6 @@ body {
 
 .dw-channel-notification {
   color: $dw-theme-secondary;
-}
-
-.dw-circle {
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  border-radius: $dw-border-radius-md;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-
-  i {
-    font-size: 21px;
-    line-height: 1.6;
-  }
-
-  &:hover {
-    color: #FFFFff;
-    text-decoration: none;
-  }
-}
-
-.dw-circle-primary {
-  background-color: $dw-theme-primary-light;
-  color: $dw-theme-primary;
-
-  &:hover {
-    background-color: $dw-theme-primary;
-  }
-}
-
-.dw-circle-seconday {
-  background-color: $dw-theme-secondary-light;
-  color: $dw-theme-secondary;
-
-  &:hover {
-    background-color: $dw-theme-secondary;
-  }
-}
-
-.dw-circle + .dw-circle {
-  margin-left: $dw-margin-xs;
 }
 
 
