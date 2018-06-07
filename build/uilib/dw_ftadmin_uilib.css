@@ -59,6 +59,14 @@ body {
   font-size: 10px;
 }
 
+.dw-right {
+  float: right;
+}
+
+.dw-left {
+  float: left;
+}
+
 .dw-badge-icon {
   position: relative;
 }
@@ -109,6 +117,10 @@ body {
 .dw-component-header h1 {
   font-weight: 300;
   font-size: 40px;
+}
+
+a {
+  color: #B3B6B3;
 }
 
 .dw-dropdown {
@@ -596,27 +608,12 @@ body {
   border-radius: 0 15px 15px 0;
 }
 
-.dw-table-user {
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.dw-table-user li {
-  list-style: none;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.dw-table-user li .dw-profile {
-  margin-right: 15px;
-  float: left;
-}
-
-.dw-profile-name {
+.dw-profile-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 140px;
+  color: #4D4D4E;
 }
 
 .dw-table-filter-left {

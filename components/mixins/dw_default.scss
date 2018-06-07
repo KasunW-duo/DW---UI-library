@@ -21,6 +21,14 @@ body {
   font-size: 10px;
 }
 
+.dw-right {
+  float: right;
+}
+
+.dw-left {
+  float: left;
+}
+
 .dw-badge-icon {
   position: relative;
 }
@@ -72,4 +80,8 @@ body {
     font-weight: $dw-font300;
     font-size: 40px;
   }
+}
+
+a {
+  color: $dw-secondary-text;
 }

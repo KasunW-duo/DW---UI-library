@@ -68,27 +68,13 @@
   }
 }
 
-.dw-table-user {
-  padding: 0;
-  margin-bottom: 0;
 
-  li {
-    list-style: none;
-    display: table-cell;
-    vertical-align: middle;
-
-    .dw-profile {
-      margin-right: $dw-gap;
-      float: left;
-    }
-  }
-}
-
-.dw-profile-name {
+.dw-profile-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 140px;
+  color: $dw-main-text;
 }
 
 
