@@ -156,4 +156,8 @@
     vertical-align: middle;
 
     color: $dw-light-text;
+
+    &:hover {
+        box-shadow: none;
+    }
 }

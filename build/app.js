@@ -66,6 +66,12 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                     url: "/list",
                     templateUrl: "components/dw_list/dw_list.html",
                     params: { comps : components['dw_list'] }
+                })
+
+                .state('Form', {
+                    url: "/form",
+                    templateUrl: "components/dw_form/dw_form.html",
+                    params: { comps : components['dw_list'] }
                 });
 
         },

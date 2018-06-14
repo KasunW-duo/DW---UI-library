@@ -4,6 +4,10 @@
   }
 }
 
+.dw-top-nav--toggle {
+
+}
+
 .dw-top-navbar-toggle {
   background-color: $dw-theme-dark;
   color: #FFFFff;
@@ -17,6 +21,10 @@
 .dw-top-navbar {
     background-color: #FFFFff;
     padding: $dw-padding;
+
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .dw-top-navbar-menu {

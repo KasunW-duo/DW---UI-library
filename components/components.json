@@ -53,5 +53,13 @@
       "description": "This component is used as a general purpose of button styling",
       "last_updated_by": "Reshika Fernando",
       "last_updated_date": "06-06-2018"
+    },
+
+    "dw_form": {
+      "name": "Form",
+      "classname": "dw-form",
+      "description": "This component is used as a general purpose of button styling",
+      "last_updated_by": "Reshika Fernando",
+      "last_updated_date": "13-06-2018"
     }
 }
