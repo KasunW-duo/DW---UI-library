@@ -290,7 +290,7 @@ a {
   border: 1px solid #4CAF50;
 }
 
-.dw-circle {
+.dw-icon {
   width: 32px;
   height: 32px;
   text-align: center;
@@ -300,35 +300,35 @@ a {
   cursor: pointer;
 }
 
-.dw-circle i {
+.dw-icon i {
   font-size: 21px;
   line-height: 1.6;
 }
 
-.dw-circle:hover {
+.dw-icon:hover {
   color: #FFFFff;
   text-decoration: none;
 }
 
-.dw-circle-primary {
+.dw-icon-primary {
   background-color: #FFDEEB;
   color: #EE437E;
 }
 
-.dw-circle-primary:hover {
+.dw-icon-primary:hover {
   background-color: #EE437E;
 }
 
-.dw-circle-seconday {
+.dw-icon-seconday {
   background-color: #F3E9FF;
   color: #68318E;
 }
 
-.dw-circle-seconday:hover {
+.dw-icon-seconday:hover {
   background-color: #68318E;
 }
 
-.dw-circle + .dw-circle {
+.dw-icon + .dw-icon {
   margin-left: 5px;
 }
 
@@ -452,36 +452,13 @@ a {
   color: #243B54;
 }
 
-.dw-toolbar {
-  padding: 15px;
-  display: grid;
-  grid-template-areas: 'title title title tools tools tools';
-}
-
-.dw-toolbar h2 {
-  margin: 0;
-  display: inline-block;
-  grid-area: title;
-  font-weight: normal;
-}
-
-.dw-toolbar .dw-tools {
-  display: inline-block;
-  grid-area: tools;
-  text-align: right;
-}
-
-.dw-toolbar .dw-tools > ul {
-  list-style: none;
-  margin: 0;
-}
-
-.dw-toolbar .dw-tools > ul > li {
-  display: inline-block;
-}
-
 .dw-navbar-logo img {
   height: 30px;
+}
+
+.dw-top-nav--toggle {
+  position: fixed;
+  height: 100%;
 }
 
 .dw-top-navbar-toggle {
@@ -914,6 +891,10 @@ small {
   margin-bottom: 10px;
 }
 
+.dw-list-unlisted {
+  list-style: none;
+}
+
 .dw-float-list li {
   float: left;
   list-style: none;
@@ -923,7 +904,6 @@ small {
 .dw-list-cell li {
   display: table-cell;
   vertical-align: middle;
-  list-style: none;
   padding: 0 6px;
 }
 
@@ -937,7 +917,6 @@ small {
 
 .dw-multilevel-list li {
   position: relative;
-  list-style: none;
 }
 
 .dw-multilevel-list li i {
@@ -968,6 +947,27 @@ small {
   padding: 6px 25px;
   color: #BDC2C6;
   position: relative;
+}
+
+.dw-multilevel-list--item:after {
+  content: "arrow_drop_down";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: -1px;
+  position: absolute;
+}
+
+.dw-list-icon i {
+  font-size: 18px;
+  float: left;
+  margin: 1px 10px 0 0;
+}
+
+.dw-list-justify {
+  text-align: justify;
 }
 
 .dw-label {
@@ -1110,8 +1110,8 @@ input[type="radio"]:disabled + .label-text:before {
 .dw-switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 4px;
 }
 
 .dw-switch input {
@@ -1119,7 +1119,7 @@ input[type="radio"]:disabled + .label-text:before {
 }
 
 .dw-switch input:checked + .dw-slider {
-  background-color: #2196F3;
+  background-color: #EE437E;
 }
 
 .dw-switch input:focus + .dw-slider {
@@ -1130,6 +1130,7 @@ input[type="radio"]:disabled + .label-text:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background-color: #EE437E;
 }
 
 .dw-slider {
@@ -1148,11 +1149,11 @@ input[type="radio"]:disabled + .label-text:before {
 .dw-slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 18px;
+  width: 18px;
+  left: 0px;
+  bottom: -7px;
+  background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 50%;

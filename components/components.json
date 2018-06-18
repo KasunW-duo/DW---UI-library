@@ -7,14 +7,6 @@
       "last_updated_date": "05-04-2018"
     },
 
-    "dw_toolbar": {
-        "name"              : "Toolbar",
-        "classname"         : "dw-toolbar",
-        "description"       : "This component is used as a toolbars of the card component",
-        "last_updated_by"   : "Kasun Wijeratne",
-        "last_updated_date" : "17-04-2018"
-    },
-
     "dw_top_nav": {
       "name"              : "Top Nav",
       "classname"         : "dw-top-nav",
