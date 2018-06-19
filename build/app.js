@@ -38,12 +38,6 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                     params: { comps : components['dw_top_nav'] }
                 })
 
-                .state('Toolbar', {
-                    url: "/toolbar",
-                    templateUrl: "components/dw_toolbar/dw_toolbar.html",
-                    params: { comps : components['dw_table'] }
-                })
-
                 .state('Table', {
                     url: "/table",
                     templateUrl: "components/dw_table/dw_table.html",

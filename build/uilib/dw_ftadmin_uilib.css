@@ -533,6 +533,39 @@ a {
   }
 }
 
+.dw-dropdown-toggle:after {
+  content: "arrow_drop_down";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: -1px;
+  position: absolute;
+}
+
+.dw-dropdown-menu {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.dw-dropdown-menu li {
+  list-style: none;
+}
+
+.dw-dropdown-menu li a {
+  padding: 6px 12px;
+}
+
+.dw-dropdown-menu li:hover a {
+  background-color: #F3E9FF;
+  color: #68318E;
+}
+
+.dw-dropdown-menu li + li {
+  border-top: 1px solid #F3E9FF;
+}
+
 .dw-table-filter {
   margin: 15px 0;
 }
