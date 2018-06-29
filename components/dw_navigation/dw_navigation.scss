@@ -121,7 +121,7 @@
 }
 
 .dw-navigation-view {
-  margin: $dw-margin-md $dw-margin-sm;
+  margin: 80px $dw-margin-sm $dw-margin-md ;
   background-color: #FFFFff;
   border-radius: $dw-border-radius-xs;
   padding: $dw-padding;
@@ -157,4 +157,23 @@
 #dw-main {
   transition: margin-left .5s;
   padding: 20px;
+}
+
+
+.dw-main-open {
+  span {
+    display: none;
+  }
+
+  ul {
+    li {
+      a {
+        min-height: 40px;
+      }
+    }
+  }
+
+  .dw-navigation-title {
+    display: none;
+  }
 }

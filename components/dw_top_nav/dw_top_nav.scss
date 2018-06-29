@@ -19,11 +19,14 @@
   }
 }
 
+.dw-top-navbar--fixed {
+  position: fixed;
+}
+
 .dw-top-navbar {
     background-color: #FFFFff;
     padding: $dw-padding;
 
-    position: fixed;
     width: 100%;
     z-index: 999;
 }
@@ -82,40 +85,5 @@
     .dw-top-navbar-toggle {
       display: none;
     }
-  }
-}
-
-.dw-dropdown-toggle {
-  &:after {
-    content: "arrow_drop_down";
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    margin-top: -1px;
-    position: absolute;
-  }
-}
-
-.dw-dropdown-menu {
-  max-width: 250px;
-  margin-top:10px;
-
-  li {
-    list-style: none;
-    a {
-      padding: 6px 12px;
-    }
-    &:hover {
-      a{
-        background-color: $dw-theme-secondary-light;
-        color: $dw-theme-secondary;
-      }
-    }
-  }
-
-  li + li {
-    border-top: 1px solid $dw-theme-secondary-light;
   }
 }

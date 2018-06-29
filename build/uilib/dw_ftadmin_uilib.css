@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@charset "UTF-8";
+
 .margin0 {
   margin: 0;
 }
@@ -471,10 +473,13 @@ a {
   color: #FFFFff;
 }
 
+.dw-top-navbar--fixed {
+  position: fixed;
+}
+
 .dw-top-navbar {
   background-color: #FFFFff;
   padding: 15px;
-  position: fixed;
   width: 100%;
   z-index: 999;
 }
@@ -531,39 +536,6 @@ a {
   .dw-top-navbar .dw-top-navbar-toggle {
     display: none;
   }
-}
-
-.dw-dropdown-toggle:after {
-  content: "arrow_drop_down";
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  margin-top: -1px;
-  position: absolute;
-}
-
-.dw-dropdown-menu {
-  max-width: 250px;
-  margin-top: 10px;
-}
-
-.dw-dropdown-menu li {
-  list-style: none;
-}
-
-.dw-dropdown-menu li a {
-  padding: 6px 12px;
-}
-
-.dw-dropdown-menu li:hover a {
-  background-color: #F3E9FF;
-  color: #68318E;
-}
-
-.dw-dropdown-menu li + li {
-  border-top: 1px solid #F3E9FF;
 }
 
 .dw-table-filter {
@@ -624,6 +596,14 @@ a {
 
 .dw-table tr:nth-of-type(odd) td:last-child {
   border-radius: 0 15px 15px 0;
+}
+
+.dw-table .dw-list {
+  margin-bottom: 0;
+}
+
+.dw-table .dw-btn {
+  margin-bottom: 0;
 }
 
 .dw-profile-text {
@@ -879,7 +859,7 @@ small {
 }
 
 .dw-navigation-view {
-  margin: 20px 10px;
+  margin: 80px 10px 20px;
   background-color: #FFFFff;
   border-radius: 8px;
   padding: 15px;
@@ -913,6 +893,18 @@ small {
 #dw-main {
   transition: margin-left .5s;
   padding: 20px;
+}
+
+.dw-main-open span {
+  display: none;
+}
+
+.dw-main-open ul li a {
+  min-height: 40px;
+}
+
+.dw-main-open .dw-navigation-title {
+  display: none;
 }
 
 .dw-list {
@@ -1003,6 +995,16 @@ small {
   text-align: justify;
 }
 
+.dw-list-justify lable {
+  width: 33.333333%;
+  float: left;
+}
+
+.dw-list-justify p {
+  float: left;
+  width: 66.666667%;
+}
+
 .dw-label {
   width: 100%;
 }
@@ -1044,101 +1046,131 @@ small {
 }
 
 .dw-form::placeholder {
-  color: #BDC2C6;
-  font-size: 12px;
+  color: #B3B6B3;
+  font-size: 14px;
   opacity: 1;
   /* Firefox */
 }
 
 .dw-for:-ms-input-placeholder {
-  coor: #BDC2C6;
-  font-size: 12px;
+  color: #BDC2C6;
+  font-size: 14px;
 }
 
 .dw-form::-ms-input-placeholder {
   color: #BDC2C6;
-  font-size: 12px;
+  font-size: 14px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+/*********
+STYLE FOR A CHECKBOX --------------- */
+
+input[type=checkbox] {
   position: absolute;
-  right: 9000px;
+  opacity: 0;
 }
 
-/*Check box*/
+input[type=checkbox] + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
 
-input[type="checkbox"] + .label-text:before {
-  content: 'check_box_outline_blank';
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 0.9;
-  letter-spacing: normal;
-  text-transform: none;
+input[type=checkbox] + label:before {
+  border: 1px solid #bbbbbb;
+  content: '';
+  margin-right: 10px;
   display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-  float: left;
-  margin-right: 5px;
+  vertical-align: text-top;
+  width: 22px;
+  height: 22px;
+  background: #e6e6e6;
+  border-radius: 3px;
 }
 
-input[type="checkbox"]:checked + .label-text:before {
-  content: "check_box";
-  color: #2980b9;
-  animation: effect 250ms ease-in;
+input[type=checkbox]:hover + label:before {
+  background: #ccc;
 }
 
-input[type="checkbox"]:disabled + .label-text {
-  color: #aaa;
+input[type=checkbox]:checked + label:before {
+  background: #5cb85c;
+  border-color: #5cb85c;
 }
 
-input[type="checkbox"]:disabled + .label-text:before {
-  content: 'check_box_outline_blank';
-  color: #ccc;
+input[type=checkbox]:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
 }
 
-/*Radio box*/
+input[type=checkbox]:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
 
-input[type="radio"] + .label-text:before {
-  content: 'radio_button_unchecked';
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 22px;
-  line-height: 0.9;
-  letter-spacing: normal;
-  text-transform: none;
+input[type=checkbox]:checked + label:after {
+  content: '✓';
+  color: #fff;
+  top: -1px;
+  font-size: 17px;
+  font-weight: bold;
+  left: 4px;
+  position: absolute;
+}
+
+/**********
+STYLE FOR A RADIO BUTTON --------------- */
+
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type=radio] + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+input[type=radio] + label:before {
+  border: 1px solid #bbbbbb;
+  content: '';
+  margin-right: 10px;
   display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-  float: left;
-  margin-right: 5px;
+  vertical-align: text-top;
+  width: 24px;
+  height: 24px;
+  background: #e6e6e6;
+  border-radius: 50%;
 }
 
-input[type="radio"]:checked + .label-text:before {
-  content: "radio_button_checked";
-  color: #8e44ad;
-  animation: effect 250ms ease-in;
+input[type=radio]:hover + label:before {
+  background: #ccc;
 }
 
-input[type="radio"]:disabled + .label-text {
-  color: #aaa;
+input[type=radio]:checked + label:before {
+  background: #5cb85c;
+  border-color: #5cb85c;
 }
 
-input[type="radio"]:disabled + .label-text:before {
-  content: "radio_button_unchecked";
-  color: #ccc;
+input[type=radio]:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
 }
 
-/*Radio Toggle*/
+input[type=radio]:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+
+input[type=radio]:checked + label:after {
+  content: '●';
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  left: 2.8px;
+  top: -14.0px;
+  position: absolute;
+}
 
 .dw-switch {
   position: relative;
@@ -1208,4 +1240,37 @@ input[type="radio"]:disabled + .label-text:before {
   100% {
     transform: scale(1);
   }
+}
+
+.dw-dropdown-toggle:after {
+  content: "arrow_drop_down";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: -1px;
+  position: absolute;
+}
+
+.dw-dropdown-menu {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.dw-dropdown-menu li {
+  list-style: none;
+}
+
+.dw-dropdown-menu li a {
+  padding: 6px 12px;
+}
+
+.dw-dropdown-menu li:hover a {
+  background-color: #F3E9FF;
+  color: #68318E;
+}
+
+.dw-dropdown-menu li + li {
+  border-top: 1px solid #F3E9FF;
 }

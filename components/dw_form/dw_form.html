@@ -1,86 +1,63 @@
 <form class="form-horizontal ng-pristine ng-valid">
-        <div class="dw-form-group">
-            <label for="input" class="dw-label">Default Input</label>
-            <input type="text" class="dw-form" id="input" placeholder="Standard Input">
-            <p class="dw-form--message"></p>
-        </div>
+    <h3>Default form</h3>
+    <div class="dw-form-group">
+        <label for="input" class="dw-label">Default Input</label>
+        <input type="text" class="dw-form" id="input" placeholder="Standard Input">
+        <p class="dw-form--message"></p>
+    </div>
+    <br>
 
-        <div class="dw-form-group">
-            <label for="input" class="dw-label">Error Input</label>
-            <input type="text" class="dw-form dw-form--error" id="input" placeholder="Standard Input">
-            <p class="dw-form--message dw-error-mg">Invalid Input</p>
-        </div>
+    <h3>Error Form</h3>
+    <div class="dw-form-group">
+        <label for="input" class="dw-label">Error Input</label>
+        <input type="text" class="dw-form dw-form--error" id="input" placeholder="Standard Input">
+        <p class="dw-form--message dw-error-mg">Invalid Input</p>
+    </div>
+    <br>
 
-        <div class="dw-form-group">
-            <label for="input" class="dw-label">Success Input</label>
-            <input type="text" class="dw-form dw-form--success" id="input" placeholder="Standard Input">
-            <p class="dw-form--message dw-sucess-mg">Success Input</p>
-        </div>
+    <h3>Successful form</h3>
+    <div class="dw-form-group">
+        <label for="input" class="dw-label">Success Input</label>
+        <input type="text" class="dw-form dw-form--success" id="input" placeholder="Standard Input">
+        <p class="dw-form--message dw-sucess-mg">Success Input</p>
+    </div>
+    <br>
 
-        <div class="dw-form-group">
-            <label for="textArea" class="dw-label">Textarea</label>
-            <textarea class="dw-form" rows="3" id="textArea"></textarea>
-            <p class="dw-form--message"></p>
-        </div>
+    <h3>Textarea</h3>
+    <div class="dw-form-group">
+        <label for="textArea" class="dw-label">Textarea</label>
+        <textarea class="dw-form" rows="3" id="textArea"></textarea>
+        <p class="dw-form--message"></p>
+    </div>
+    <br>
 
-        <div class="form-group">
-            <div class="form-check">
-                <label>
-                    <input type="checkbox" name="check" checked> <span class="label-text">Option 01</span>
-                </label>
-            </div>
-            <div class="form-check">
-                <label>
-                    <input type="checkbox" name="check"> <span class="label-text">Option 02</span>
-                </label>
-            </div>
-            <div class="form-check">
-                <label>
-                    <input type="checkbox" name="check"> <span class="label-text">Option 03</span>
-                </label>
-            </div>
-            <div class="form-check">
-                <label>
-                    <input type="checkbox" name="check" disabled> <span class="label-text">Option 04</span>
-                </label>
-            </div>
-        </div>
+    <h3>Checkbox Labels</h3>
+    <div class="form-group">
+        <input id="checkbox1" name="checkBox" type="checkbox">
+        <label for="checkbox1">Checkbox Label</label>
 
-        <div class="form-group">
-            <div class="form-check">
-                <label>
-                    <input type="radio" name="radio" checked> <span class="label-text">Option 01</span>
-                </label>
-            </div>
-            <div class="form-check">
-                <label>
-                    <input type="radio" name="radio"> <span class="label-text">Option 02</span>
-                </label>
-            </div>
-            <div class="form-check">
-                <label>
-                    <input type="radio" name="radio"> <span class="label-text">Option 03</span>
-                </label>
-            </div>
-            <div class="form-check">
-                <label>
-                    <input type="radio" name="radio" disabled> <span class="label-text">Option 04</span>
-                </label>
-            </div>
-        </div>
+        <input id="checkbox2" name="checkBox" type="checkbox">
+        <label for="checkbox2">Checkbox Label</label>
 
-        <div class="form-group">
-            <label class="dw-switch">
-                <input type="checkbox">
-                <span class="dw-slider round"></span>
-            </label>
+        <input id="checkbox3" name="checkBox" type="checkbox">
+        <label for="checkbox3">Checkbox Label</label>
+    </div>
+    <br>
 
-            <label class="dw-switch">
-                <input type="checkbox" checked>
-                <span class="dw-slider round"></span>
-            </label>
-        </div>
+    <h3>Radio Buttons Labels</h3>
+    <div class="form-group">
+        <input id="radioButton1" name="radioButton" type="radio">
+        <label for="radioButton1">Radio button Label</label>
 
+        <input id="radioButton2" name="radioButton" type="radio">
+        <label for="radioButton2">Radio button Label</label>
+
+        <input id="radioButton3" name="radioButton" type="radio">
+        <label for="radioButton3">Radio button Label</label>
+    </div>
+    <br>
+
+    <h3>Select Box</h3>
         <div class="form-group">
             <label for="select" class="col-sm-2 control-label">Selects</label>
             <select class="dw-form" id="select">
@@ -93,6 +70,8 @@
             <p class="dw-form--message dw-sucess-mg">Success Input</p>
 
             <br>
+
+            <label for="select" class="col-sm-2 control-label">Multiple Selectbox</label>
             <select multiple="" class="dw-form">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -104,6 +83,8 @@
         </div>
 
         <!-- remove inline styles once included into the framework and the dropdown is functioning-->
+
+        <h3>Dropdown Input</h3>
         <div class="form-group" style="position:relative">
             <a class="dw-dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown

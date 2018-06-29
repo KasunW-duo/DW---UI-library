@@ -25,7 +25,7 @@
     <div class="slide-animate" ng-include="template.url"></div>
 </div>-->
 
-<nav class="dw-top-navbar dw-shadow">
+<nav class="dw-top-navbar dw-shadow dw-top-navbar--fixed">
     <a class="navbar-brand dw-navbar-logo" href="#">
         <img src="../../build/images/sample-logo.png">
     </a>
@@ -46,7 +46,7 @@
                                 <i class="material-icons">
                                     favorite
                                 </i>
-                                {{ b.name }}
+                                <span>{{ b.name }}</span>
                             </a>
                         </li>
                     </ul>
@@ -81,11 +81,15 @@
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("dw-main").style.marginLeft = "80px";
 
+        $("#mySidenav").removeClass("dw-main-open");
+
     }
 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("dw-main").style.marginLeft= "0"
+        document.getElementById("mySidenav").style.width = "60px";
+        document.getElementById("dw-main").style.marginLeft= "0";
+
+        $("#mySidenav").addClass("dw-main-open");
     }
 </script>
 
