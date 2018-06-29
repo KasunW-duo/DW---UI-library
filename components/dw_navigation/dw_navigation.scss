@@ -8,12 +8,11 @@
 
     li {
       list-style: none;
-
-
+      width: 250px;
       a {
         display: block;
         border-bottom: 1px solid #333;
-        padding: 6px 25px;
+        padding: 6px 15px;
         color: $dw-light-text;
         position: relative;
 
@@ -21,6 +20,11 @@
           font-size: 18px;
           float: left;
           margin: $dw-margin-xs $dw-margin-sm 0 0;
+        }
+
+        &>span {
+           opacity: 0;
+           transition: all $dw-timeframe-primary;
         }
 
         &:hover {
@@ -143,15 +147,30 @@
 }
 
 .dw-sidenav {
-  height: 100%;
-  width: 0;
+  height: calc(100% - 70px);
+  width: 50px;
   position: fixed;
   z-index: 1;
-  top: 78px;
+  bottom: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
+  overflow: hidden;
+  transition: all $dw-timeframe-primary;
+
+  &:hover {
+    width: 250px;
+
+    ul {
+      li {
+        a {
+          &>span {
+            opacity: 1;
+            transition: all $dw-timeframe-primary;
+          }
+        }
+      }
+    }
+  }
 }
 
 #dw-main {

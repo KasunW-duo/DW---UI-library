@@ -30,15 +30,15 @@
         <img src="../../build/images/sample-logo.png">
     </a>
 
-    <span class="dw-top-nav--toggle" style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+    <span class="dw-top-nav--toggle" style="font-size:30px;cursor:pointer">&#9776;</span>
 </nav>
 
 
 <div ng-controller="NavigationController">
     <div class="row margin0">
         <div class="container">
-            <div id="mySidenav" class="dw-sidenav" onmouseleave="closeNav()">
-                <div class="dw-navigation" id="sidenav">
+            <div id="mySidenav" class="dw-sidenav">
+                <div class="dw-navigation" id="sidenav" onmouseleave="closeNav()" onmouseover="openNav()">
                     <ul>
                         <li class="dw-navigation-title dw-text700">General testing</li>
                         <li ng-repeat="b in data">
@@ -59,8 +59,6 @@
                         <p class="dw-subtitle">{{state.current.params.comps.description}}</p>
                         <p>Last updated : {{state.current.params.comps.last_updated_date}}</p>
                     </div>
-
-
                     <div ui-view></div>
                 </div>
             </div>
@@ -71,29 +69,24 @@
 
 
 <script src="build/app.js"></script>
-
 <script src="components/dw_card/dw_card_controller.js" type="text/javascript"></script>
 <script src="components/dw_top_nav/dw_top_nav_controller.js" type="text/javascript"></script>
 <script src="components/dw_navigation/dw_navigation_controller.js" type="text/javascript"></script>
-
 <script>
     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        // document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("dw-main").style.marginLeft = "80px";
-
-        $("#mySidenav").removeClass("dw-main-open");
+        // $("#mySidenav").removeClass("dw-main-open");
 
     }
 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "60px";
+        // document.getElementById("mySidenav").style.width = "60px";
         document.getElementById("dw-main").style.marginLeft= "0";
 
-        $("#mySidenav").addClass("dw-main-open");
+        // $("#mySidenav").addClass("dw-main-open");
     }
 </script>
-
-
 
 </body>
 
