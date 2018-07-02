@@ -762,12 +762,13 @@ small {
 
 .dw-navigation ul li {
   list-style: none;
+  width: 250px;
 }
 
 .dw-navigation ul li a {
   display: block;
   border-bottom: 1px solid #333;
-  padding: 6px 25px;
+  padding: 6px 15px;
   color: #BDC2C6;
   position: relative;
 }
@@ -776,6 +777,11 @@ small {
   font-size: 18px;
   float: left;
   margin: 5px 10px 0 0;
+}
+
+.dw-navigation ul li a > span {
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .dw-navigation ul li a:hover {
@@ -879,15 +885,24 @@ small {
 }
 
 .dw-sidenav {
-  height: 100%;
-  width: 0;
+  height: calc(100% - 70px);
+  width: 50px;
   position: fixed;
   z-index: 1;
-  top: 78px;
+  bottom: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.dw-sidenav:hover {
+  width: 250px;
+}
+
+.dw-sidenav:hover ul li a > span {
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 #dw-main {
@@ -1082,10 +1097,9 @@ input[type=checkbox] + label:before {
   margin-right: 10px;
   display: inline-block;
   vertical-align: text-top;
-  width: 22px;
-  height: 22px;
+  width: 19px;
+  height: 19px;
   background: #e6e6e6;
-  border-radius: 3px;
 }
 
 input[type=checkbox]:hover + label:before {
@@ -1093,8 +1107,8 @@ input[type=checkbox]:hover + label:before {
 }
 
 input[type=checkbox]:checked + label:before {
-  background: #5cb85c;
-  border-color: #5cb85c;
+  background: #EE437E;
+  border-color: #EE437E;
 }
 
 input[type=checkbox]:disabled + label {
@@ -1111,7 +1125,7 @@ input[type=checkbox]:checked + label:after {
   content: '✓';
   color: #fff;
   top: -1px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   left: 4px;
   position: absolute;
@@ -1137,10 +1151,10 @@ input[type=radio] + label:before {
   margin-right: 10px;
   display: inline-block;
   vertical-align: text-top;
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
   background: #e6e6e6;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 input[type=radio]:hover + label:before {
@@ -1148,8 +1162,8 @@ input[type=radio]:hover + label:before {
 }
 
 input[type=radio]:checked + label:before {
-  background: #5cb85c;
-  border-color: #5cb85c;
+  background: #EE437E;
+  border-color: #EE437E;
 }
 
 input[type=radio]:disabled + label {
@@ -1165,10 +1179,10 @@ input[type=radio]:disabled + label:before {
 input[type=radio]:checked + label:after {
   content: '●';
   color: #fff;
-  font-size: 32px;
+  font-size: 29px;
   font-weight: bold;
-  left: 2.8px;
-  top: -14.0px;
+  left: 1.1px;
+  top: -14.41px;
   position: absolute;
 }
 
@@ -1256,6 +1270,7 @@ input[type=radio]:checked + label:after {
 .dw-dropdown-menu {
   max-width: 250px;
   margin-top: 10px;
+  border-radius: 8px;
 }
 
 .dw-dropdown-menu li {
