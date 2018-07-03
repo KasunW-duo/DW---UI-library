@@ -54,9 +54,11 @@
   .dw-top-navbar {
     .dw-top-navbar-menu {
       display: block;
+      margin: 0;
 
       ul {
         display: block;
+        margin: 0;
 
         li {
           float: left;
@@ -78,6 +80,29 @@
               width: 1px;
             }
           }
+        }
+      }
+
+      .dw-dropdown-menu {
+        padding:0;
+
+        li {
+          width: 100%;
+          border:none;
+          padding: 0;
+          margin: 0;
+
+          a {
+            text-decoration: none;
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+
+        li + li {
+          border-top:1px solid $dw-light-text;
         }
       }
     }

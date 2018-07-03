@@ -93,7 +93,8 @@ body {
 }
 
 .row {
-  margin: 0;
+  width: 100%;
+  display: inline-grid;
 }
 
 .dw-text-center {
@@ -230,6 +231,7 @@ a {
   float: left;
   margin-right: 5px;
   font-size: 21px;
+  line-height: 0.7;
 }
 
 .dw-btn.dw-tool {
@@ -300,6 +302,8 @@ a {
   padding: 0;
   border: none;
   cursor: pointer;
+  display: inline-block;
+  line-height: 0.7;
 }
 
 .dw-icon i {
@@ -505,10 +509,12 @@ a {
 
   .dw-top-navbar .dw-top-navbar-menu {
     display: block;
+    margin: 0;
   }
 
   .dw-top-navbar .dw-top-navbar-menu ul {
     display: block;
+    margin: 0;
   }
 
   .dw-top-navbar .dw-top-navbar-menu ul li {
@@ -531,6 +537,29 @@ a {
     left: 0;
     height: 20px;
     width: 1px;
+  }
+
+  .dw-top-navbar .dw-top-navbar-menu .dw-dropdown-menu {
+    padding: 0;
+  }
+
+  .dw-top-navbar .dw-top-navbar-menu .dw-dropdown-menu li {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dw-top-navbar .dw-top-navbar-menu .dw-dropdown-menu li a {
+    text-decoration: none;
+  }
+
+  .dw-top-navbar .dw-top-navbar-menu .dw-dropdown-menu li a:before {
+    display: none;
+  }
+
+  .dw-top-navbar .dw-top-navbar-menu .dw-dropdown-menu li + li {
+    border-top: 1px solid #BDC2C6;
   }
 
   .dw-top-navbar .dw-top-navbar-toggle {
@@ -561,7 +590,7 @@ a {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
-  background-color: transparent;
+  background-color: green;
 }
 
 .dw-table thead th {
@@ -925,6 +954,7 @@ small {
 .dw-list {
   padding: 0;
   width: 100%;
+  float: left;
 }
 
 .dw-list li {
@@ -1278,7 +1308,8 @@ input[type=radio]:checked + label:after {
 }
 
 .dw-dropdown-menu li a {
-  padding: 6px 12px;
+  padding: 12px;
+  display: block;
 }
 
 .dw-dropdown-menu li:hover a {

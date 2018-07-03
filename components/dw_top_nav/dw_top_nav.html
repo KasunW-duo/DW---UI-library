@@ -7,8 +7,8 @@
                 menu
             </i>
         </button>
-        <div id="navbarNavDropdown" class="navbar-collapse collapse dw-top-navbar-menu">
-            <ul class="navbar-nav dw-top-navbar-links">
+        <ul id="navbarNavDropdown" class="navbar-collapse collapse dw-top-navbar-menu">
+            <ul class="navbar-nav dw-top-navbar-links dw-list dw-float-list">
                 <li>
                     <form action="/action_page.php">
                         <button type="submit" class="dw-btn-flat">
@@ -23,11 +23,12 @@
                     <a class="dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
+                    <ul class="dw-dropdown-menu dw-card" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
                 </li>
+
                 <li class="nav-item">
                     <a class="" href="{{ url('/login') }}">
                         <div class="dw-badge-icon">

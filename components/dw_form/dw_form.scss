@@ -227,7 +227,8 @@ input[type=radio]:checked + label:after {
     li {
         list-style: none;
         a {
-            padding: 6px 12px;
+            padding: 12px;
+            display: block;
         }
         &:hover {
             a{

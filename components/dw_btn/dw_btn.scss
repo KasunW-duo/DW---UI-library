@@ -32,6 +32,7 @@
             float: left;
             margin-right: 5px;
             font-size: 21px;
+            line-height: 0.7;
         }
     }
 
@@ -112,6 +113,8 @@
     padding: 0;
     border: none;
     cursor: pointer;
+    display: inline-block;
+    line-height: 0.7;
 
     i {
         font-size: 21px;
