@@ -1,13 +1,15 @@
 {
     "dw_card": {
-      "name": "Generic Card",
-      "classname": "dw-card",
-      "description": "This component is used as a general purpose Card element in a carded layout",
-      "last_updated_by": "Kasun Wijeratne",
-      "last_updated_date": "05-04-2018"
+      "id"                : "dw_card",
+      "name"              : "Generic Card",
+      "classname"         : "dw-card",
+      "description"       : "This component is used as a general purpose Card element in a carded layout",
+      "last_updated_by"   : "Kasun Wijeratne",
+      "last_updated_date" : "05-04-2018"
     },
 
     "dw_top_nav": {
+      "id"                : "dw_top_nav",
       "name"              : "Top Nav",
       "classname"         : "dw-top-nav",
       "description"       : "This component is used as top navigation of the app",
@@ -16,6 +18,7 @@
     },
 
     "dw_table": {
+      "id"                : "dw_table",
       "name"              : "Table",
       "classname"         : "dw-table",
       "description"       : "This component is used as top navigation of the app",
@@ -24,6 +27,7 @@
     },
 
     "dw_typography": {
+      "id"                : "dw_typography",
       "name"              : "Typography",
       "classname"         : "dw-typography",
       "description"       : "This component is used as top navigation of the app",
@@ -32,6 +36,7 @@
     },
 
     "dw_list": {
+      "id"                : "dw_list",
       "name"              : "Lists",
       "classname"         : "dw-list",
       "description"       : "This component represent all the list styles of the theme",
@@ -40,6 +45,7 @@
     },
 
     "dw_btn": {
+      "id": "dw_btn",
       "name": "Buttons",
       "classname": "dw-btn",
       "description": "This component is used as a general purpose of button styling",
@@ -48,6 +54,7 @@
     },
 
     "dw_form": {
+      "id": "dw_form",
       "name": "Form",
       "classname": "dw-form",
       "description": "This component is used as a general purpose of button styling",
