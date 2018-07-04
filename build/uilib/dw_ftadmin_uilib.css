@@ -95,6 +95,7 @@ body {
 .row {
   width: 100%;
   display: inline-grid;
+  margin: 0;
 }
 
 .dw-text-center {
@@ -125,6 +126,15 @@ body {
 
 a {
   color: #B3B6B3;
+}
+
+.dw-code-preview {
+  padding: 15px;
+}
+
+.dw-code-preview textarea {
+  border: none;
+  outline: none;
 }
 
 .dw-dropdown {
@@ -798,7 +808,7 @@ small {
   display: block;
   border-bottom: 1px solid #333;
   padding: 6px 15px;
-  color: #BDC2C6;
+  color: #BDC2C6 !important;
   position: relative;
 }
 

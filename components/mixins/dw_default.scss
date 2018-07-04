@@ -55,6 +55,7 @@ body {
 .row {
   width: 100%;
   display: inline-grid;
+  margin:0;
 }
 
 .dw-text-center {
@@ -86,4 +87,13 @@ body {
 
 a {
   color: $dw-secondary-text;
+}
+
+.dw-code-preview {
+  padding: $dw-gap;
+
+  textarea {
+    border: none;
+    outline: none;
+  }
 }
