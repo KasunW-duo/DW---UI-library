@@ -44,7 +44,7 @@
   }
 
   th,td {
-    padding: 0.75rem;
+    padding: 0 $dw-gap-sm;
     vertical-align: middle;
     text-transform: capitalize;
   }
@@ -107,6 +107,6 @@
 }
 
 .dw-input-table {
-  height: 36px;
+  height: 26px;
   padding: 0 10px;
 }

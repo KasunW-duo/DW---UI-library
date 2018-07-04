@@ -609,7 +609,7 @@ a {
 
 .dw-table th,
 .dw-table td {
-  padding: 0.75rem;
+  padding: 0 10px;
   vertical-align: middle;
   text-transform: capitalize;
 }
@@ -663,7 +663,7 @@ a {
 }
 
 .dw-input-table {
-  height: 36px;
+  height: 26px;
   padding: 0 10px;
 }
 
