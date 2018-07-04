@@ -24,7 +24,6 @@
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
-  background-color: green;
 
   thead {
     th {
@@ -68,7 +67,7 @@
   }
 
   .dw-list {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .dw-btn {
@@ -109,4 +108,5 @@
 
 .dw-input-table {
   height: 36px;
+  padding: 0 10px;
 }

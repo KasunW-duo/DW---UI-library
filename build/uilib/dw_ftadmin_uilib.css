@@ -590,7 +590,6 @@ a {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
-  background-color: green;
 }
 
 .dw-table thead th {
@@ -628,7 +627,7 @@ a {
 }
 
 .dw-table .dw-list {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .dw-table .dw-btn {
@@ -665,6 +664,7 @@ a {
 
 .dw-input-table {
   height: 36px;
+  padding: 0 10px;
 }
 
 .dw-typo-list {
