@@ -3,6 +3,12 @@ body {
   color: $dw-default-text;
 }
 
+.dw-main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  transition: margin-left .5s;
+}
 .dw-shadow {
   -webkit-box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
   -moz-box-shadow: 0 0px 4px 0 rgba(130, 152, 174,0.5), 0 0px 0px 0 rgba(130, 152, 174,0.5);
@@ -75,13 +81,12 @@ body {
 
 .dw-component-header {
   margin-bottom: $dw-gap-lg;
-  padding: $dw-padding;
-  background-color: $dw-background;
-  border-radius: $dw-border-radius-xs;
 
   h1 {
     font-weight: $dw-font300;
-    font-size: 40px;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
   }
 }
 

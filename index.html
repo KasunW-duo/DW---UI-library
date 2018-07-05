@@ -7,15 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <base href="/" />
     <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
     <link rel="stylesheet" href="build/shell/shell.css">
     <link rel="stylesheet" href="build/uilib/dw_ftadmin_uilib.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
     <script src="build/shell/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!--<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
 </head>
 
 <body>
@@ -51,16 +52,23 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-12"  id="dw-main">
+            <div class="col-md-12 dw-main"  id="dw-main">
                 <div class="dw-navigation-view">
                     <div class="dw-component-header">
                         <h1 class="dw-font300">{{state.current.params.comps.name}}</h1>
                         <p class="dw-subtitle">{{state.current.params.comps.description}}</p>
                         <p>Last updated : {{state.current.params.comps.last_updated_date}}</p>
                     </div>
-                    <div ui-view></div>
-                    <div class="dw-code-preview dw-card">
-                        <textarea name="codePreview" id="dwCodePreview" style="width: 100%; height: 300px"></textarea>
+
+                    <div class="dw-example">
+                        <div ui-view></div>
+
+
+                        <div class="dw-code-preview">
+                            <pre>
+                                <code id="dwCodePreview"></code>
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,16 +85,24 @@
 <script>
     function openNav() {
         // document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("dw-main").style.marginLeft = "80px";
+        document.getElementById("dw-main").style.marginLeft = "200px";
+        document.getElementById("dw-main").style.width="calc(90% - 100px)";
         // $("#mySidenav").removeClass("dw-main-open");
 
     }
 
     function closeNav() {
         // document.getElementById("mySidenav").style.width = "60px";
-        document.getElementById("dw-main").style.marginLeft= "0";
-
+        document.getElementById("dw-main").style.marginLeft= "auto";
+        document.getElementById("dw-main").style.width="90%";
         // $("#mySidenav").addClass("dw-main-open");
+    }
+</script>
+
+<script>
+
+    function dropdown() {
+        document.getElementById("dw-dropdown").classList.toggle("show");
     }
 </script>
 

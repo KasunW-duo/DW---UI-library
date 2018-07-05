@@ -12,7 +12,7 @@
       "id"                : "dw_top_nav",
       "name"              : "Top Nav",
       "classname"         : "dw-top-nav",
-      "description"       : "This component is used as top navigation of the app",
+      "description"       : "This is documentation of the top navigation of the theme. Includes support for branding(logo), navigation, search field, notification, user profile menu.",
       "last_updated_by"   : "Reshika Fernando",
       "last_updated_date" : "23-04-2018"
     },

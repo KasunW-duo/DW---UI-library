@@ -126,9 +126,6 @@
 
 .dw-navigation-view {
   margin: 80px $dw-margin-sm $dw-margin-md ;
-  background-color: #FFFFff;
-  border-radius: $dw-border-radius-xs;
-  padding: $dw-padding;
 }
 
 .dw-multilevel-third {
@@ -172,12 +169,6 @@
     }
   }
 }
-
-#dw-main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
 
 .dw-main-open {
   span {

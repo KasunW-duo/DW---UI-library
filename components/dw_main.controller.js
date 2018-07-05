@@ -10,7 +10,7 @@ angular.module('dwUilib')
 
         $scope.getCode = function(state, id) {
             $http.get('components/' + id + '/' + id + '.html').then(function (response) {
-                $('#dwCodePreview').val(response.data);
+                $('#dwCodePreview').text(response.data);
                 $state.go(state);
             });
         };

@@ -7,22 +7,6 @@
     overflow: hidden;
     margin: 0 0 $dw-gap;
 
-    // Card header
-    .dw-card-header {
-        padding: $dw-gap 25px!important;
-        -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
-
-        .dw-btn {
-            margin-bottom: $dw-gap!important;
-        }
-
-        .dw-subtitle {
-            display: inline-table;
-        }
-    }
-
     // Card body
     .dw-card-body {
         padding: $dw-padding;

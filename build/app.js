@@ -75,7 +75,6 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
     });
 }]);
 
-
 //initiating angula as a variable so we can use it where we want to call this app.. dwUilib is our app name (app for the project)
 
 //var app = angular.module('dwUilib',['uirouter']);
